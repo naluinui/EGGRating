@@ -1,0 +1,22 @@
+{
+  "name": "EggRating",
+  "version": "0.1.0",
+  "summary": "A short description of EggRating.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/EggRating",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Somjintana K.": "nuisomjin@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/EggRating.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "EggRating/Classes/**/*"
+}
