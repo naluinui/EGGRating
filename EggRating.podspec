@@ -21,22 +21,24 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/<GITHUB_USERNAME>/EggRating'
+  s.homepage         = 'https://github.com/naluinui/EggRating'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Somjintana K.' => 'nuisomjin@gmail.com' }
-  s.source           = { :git => 'https://github.com/<GITHUB_USERNAME>/EggRating.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/naluinui/EggRating.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'EggRating/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'EggRating' => ['EggRating/Assets/*.png']
-  # }
+  s.resource_bundles = {
+    'EggRating' => ['EggRating/Assets/*.png'],
+    'EggRating' => ['EggRating/Classes/**/*.xib']
+
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'RateView'
 end

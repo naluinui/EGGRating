@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import EggRating
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        EggRating.showRateUsInView(viewController: self)
+        
     }
 
     override func didReceiveMemoryWarning() {

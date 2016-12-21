@@ -1,5 +1,7 @@
 PODS:
-  - EggRating (0.1.0)
+  - EggRating (0.1.0):
+    - RateView
+  - RateView (1.2)
 
 DEPENDENCIES:
   - EggRating (from `../`)
@@ -9,7 +11,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  EggRating: f6af9b335c318ac132207e3713c09f4d79e7a6e8
+  EggRating: 5ad4b2b138c364fe9a4fabb198cbb1f133e43e43
+  RateView: d4d12e9bb76dc23a77a56f4e5c5fb530a3f3f998
 
 PODFILE CHECKSUM: 81eb6d20677b93f54765c2ce804b99f4f0609e2a
 

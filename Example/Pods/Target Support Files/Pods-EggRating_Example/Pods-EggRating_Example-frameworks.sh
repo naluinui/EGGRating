@@ -85,7 +85,9 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/EggRating/EggRating.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/RateView/RateView.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/EggRating/EggRating.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/RateView/RateView.framework"
 fi

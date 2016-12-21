@@ -1,9 +1,9 @@
 {
   "name": "EggRating",
   "version": "0.1.0",
-  "summary": "A short description of EggRating.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/EggRating",
+  "summary": "EggRating - enhance the users to rate your application on the App Store!",
+  "description": "// TODO",
+  "homepage": "https://github.com/naluinui/EggRating",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,21 @@
     "Somjintana K.": "nuisomjin@gmail.com"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/EggRating.git",
+    "git": "https://github.com/naluinui/EggRating.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "EggRating/Classes/**/*"
+  "source_files": "EggRating/Classes/**/*",
+  "resource_bundles": {
+    "EggRating": [
+      "EggRating/Classes/**/*.xib"
+    ]
+  },
+  "dependencies": {
+    "RateView": [
+
+    ]
+  }
 }
