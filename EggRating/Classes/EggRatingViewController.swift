@@ -22,6 +22,25 @@ class EggRatingViewController: UIViewController {
         super.viewDidLoad()
         
         containerView.layer.cornerRadius = 5
+        setupStarRateView()
+    }
+    
+    func setupStarRateView() {
+        
+        let starContainerViewFrame = starContainerView.frame
+        
+        guard let starRateView = RateView(rating: 3.5) else {
+            return
+        }
+        
+        starRateView.step = 0.5
+        starRateView.starSize = starContainerViewFrame.width/5.5
+        starRateView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+        
+        let frame = CGRect(x: (starContainerViewFrame.width - starRateView.frame.width)/2, y: starContainerViewFrame.height/2 - starRateView.frame.height/2, width: starContainerViewFrame.width, height: starContainerViewFrame.height)
+        
+        starRateView.frame = frame
+        starContainerView.addSubview(starRateView)
     }
 
     override func didReceiveMemoryWarning() {
