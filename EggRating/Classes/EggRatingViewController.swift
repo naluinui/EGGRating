@@ -93,7 +93,12 @@ class EggRatingViewController: UIViewController {
         print("[Action] rateButtonTouched")
         self.view.backgroundColor = UIColor.clear
         self.containerView.isHidden = true
-        showRateInAppStoreAlertController()
+        
+        if rating >= EggRating.minRatingToAppStore {
+            showRateInAppStoreAlertController()
+        } else {
+            showDisadvantageAlertController()
+        }
     }
     
     // MARK: Alert
