@@ -34,7 +34,7 @@ class EggRatingViewController: UIViewController {
     }
     
     func setupView() {
-        containerView.layer.cornerRadius = 5
+        containerView.layer.cornerRadius = 10
         
         setupStarRateView()
         
