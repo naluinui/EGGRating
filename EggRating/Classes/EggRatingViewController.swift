@@ -10,6 +10,8 @@ import UIKit
 import RateView
 
 class EggRatingViewController: UIViewController {
+    
+    private let defaultColor = UIColor(red: 255/255, green: 181/255, blue: 17/255, alpha: 1)
 
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var starContainerView: UIView!
@@ -29,10 +31,15 @@ class EggRatingViewController: UIViewController {
         
         let starContainerViewFrame = starContainerView.frame
         
-        guard let starRateView = RateView(rating: 3.5) else {
+        guard let starRateView = RateView(rating: 0) else {
             return
         }
         
+        starRateView.canRate = true
+        starRateView.delegate = self
+        starRateView.starFillColor = defaultColor
+        starRateView.starBorderColor = defaultColor
+        starRateView.starNormalColor = UIColor.clear
         starRateView.step = 0.5
         starRateView.starSize = starContainerViewFrame.width/5.5
         starRateView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
@@ -52,4 +59,9 @@ class EggRatingViewController: UIViewController {
         
     }
 
+extension EggRatingViewController: RateViewDelegate {
+    
+    func rateView(_ rateView: RateView!, didUpdateRating rating: Float) {
+        rateView.rating = rating
+    }
 }
