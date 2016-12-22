@@ -11,7 +11,14 @@ import RateView
 
 class EggRatingViewController: UIViewController {
     
-    private let defaultColor = UIColor(red: 255/255, green: 181/255, blue: 17/255, alpha: 1)
+    fileprivate var rating: Double = 0.0 {
+        didSet {
+            self.rateButton.setTitleColor(rating > 0.0 ? defaultTintColor : UIColor.gray, for: .normal)
+            self.rateButton.isEnabled = rating > 0.0
+        }
+    }
+    
+    fileprivate let defaultTintColor = UIColor(red:0.0, green:122.0/255.0, blue:1.0, alpha:1.0)
 
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var starContainerView: UIView!
@@ -22,9 +29,23 @@ class EggRatingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setupView()
+        rating = 0.0
+    }
+    
+    func setupView() {
         containerView.layer.cornerRadius = 5
+        
         setupStarRateView()
+        
+        titleLabel.text = EggRating.titleLabelText
+        descriptionLabel.text = EggRating.descriptionLabelText
+        
+        cancelButton.setTitle(EggRating.dismissButtonTitleText, for: .normal)
+        cancelButton.setTitleColor(defaultTintColor, for: .normal)
+        
+        rateButton.setTitle(EggRating.rateButtonTitleText, for: .normal)
+        rateButton.setTitleColor(defaultTintColor, for: .normal)
     }
     
     func setupStarRateView() {
@@ -37,9 +58,9 @@ class EggRatingViewController: UIViewController {
         
         starRateView.canRate = true
         starRateView.delegate = self
-        starRateView.starFillColor = defaultColor
-        starRateView.starBorderColor = defaultColor
-        starRateView.starNormalColor = UIColor.clear
+        starRateView.starFillColor = EggRating.starFillColor
+        starRateView.starBorderColor = EggRating.starBorderColor
+        starRateView.starNormalColor = EggRating.starNormalColor
         starRateView.step = 0.5
         starRateView.starSize = starContainerViewFrame.width/5.5
         starRateView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
@@ -65,7 +86,7 @@ class EggRatingViewController: UIViewController {
         print("[Action] cancelButtonTouched")
         self.view.backgroundColor = UIColor.clear
         self.containerView.isHidden = true
-        showDisadvantageAlertController()
+        self.view.removeFromSuperview()
     }
     
     @IBAction func rateButtonTouched(_ sender: UIButton) {
@@ -79,9 +100,9 @@ class EggRatingViewController: UIViewController {
     
     func showDisadvantageAlertController() {
         
-        let disadvantageAlertController = UIAlertController(title: "Thank you!", message: "Thank you for taking the time to provide us with your valuable feedback.", preferredStyle: .alert)
+        let disadvantageAlertController = UIAlertController(title: EggRating.thankyouTitleLabelText, message: EggRating.thankyouDescriptionLabelText, preferredStyle: .alert)
         
-        disadvantageAlertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { (_) in
+        disadvantageAlertController.addAction(UIAlertAction(title: EggRating.thankyouDismissButtonTitleText, style: .default, handler: { (_) in
             self.view.removeFromSuperview()
         }))
         
@@ -90,13 +111,13 @@ class EggRatingViewController: UIViewController {
     
     func showRateInAppStoreAlertController() {
         
-        let rateInAppStoreAlertController = UIAlertController(title: "Write a review on the App Store", message: "Would you mind taking a moment to rate it on the App Store? It won't take more than a minute. Thanks for your support!", preferredStyle: .alert)
+        let rateInAppStoreAlertController = UIAlertController(title: EggRating.appStoreTitleLabelText, message: EggRating.appStoreDescriptionLabelText, preferredStyle: .alert)
         
-        rateInAppStoreAlertController.addAction(UIAlertAction(title: "Cancel", style: .default, handler: { (_) in
+        rateInAppStoreAlertController.addAction(UIAlertAction(title: EggRating.appStoreDismissButtonTitleText, style: .default, handler: { (_) in
             self.view.removeFromSuperview()
         }))
         
-        rateInAppStoreAlertController.addAction(UIAlertAction(title: "Rate It Now", style: .default, handler: { (_) in
+        rateInAppStoreAlertController.addAction(UIAlertAction(title: EggRating.appStoreRateButtonTitleText, style: .default, handler: { (_) in
             self.sendUserToAppStore()
             self.view.removeFromSuperview()
         }))
@@ -109,6 +130,7 @@ class EggRatingViewController: UIViewController {
 extension EggRatingViewController: RateViewDelegate {
     
     func rateView(_ rateView: RateView!, didUpdateRating rating: Float) {
-        rateView.rating = rating
+        print("[rating] \(rating)")
+        self.rating = Double(rating)
     }
 }

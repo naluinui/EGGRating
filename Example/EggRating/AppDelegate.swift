@@ -16,7 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        EggRating.itunesId = "000"
+        
+        EggRating.itunesId = "123456789"
+        EggRating.minRatingToAppStore = 3.5
+        
         return true
     }
 
