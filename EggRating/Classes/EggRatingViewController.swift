@@ -55,9 +55,56 @@ class EggRatingViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    public static func sendUserToAppStore() {
+    func sendUserToAppStore() {
         
     }
+    
+    // MARK: - Action
+
+    @IBAction func cancelButtonTouched(_ sender: UIButton) {
+        print("[Action] cancelButtonTouched")
+        self.view.backgroundColor = UIColor.clear
+        self.containerView.isHidden = true
+        showDisadvantageAlertController()
+    }
+    
+    @IBAction func rateButtonTouched(_ sender: UIButton) {
+        print("[Action] rateButtonTouched")
+        self.view.backgroundColor = UIColor.clear
+        self.containerView.isHidden = true
+        showRateInAppStoreAlertController()
+    }
+    
+    // MARK: Alert
+    
+    func showDisadvantageAlertController() {
+        
+        let disadvantageAlertController = UIAlertController(title: "Thank you!", message: "Thank you for taking the time to provide us with your valuable feedback.", preferredStyle: .alert)
+        
+        disadvantageAlertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { (_) in
+            self.view.removeFromSuperview()
+        }))
+        
+        self.present(disadvantageAlertController, animated: true, completion: nil)
+    }
+    
+    func showRateInAppStoreAlertController() {
+        
+        let rateInAppStoreAlertController = UIAlertController(title: "Write a review on the App Store", message: "Would you mind taking a moment to rate it on the App Store? It won't take more than a minute. Thanks for your support!", preferredStyle: .alert)
+        
+        rateInAppStoreAlertController.addAction(UIAlertAction(title: "Cancel", style: .default, handler: { (_) in
+            self.view.removeFromSuperview()
+        }))
+        
+        rateInAppStoreAlertController.addAction(UIAlertAction(title: "Rate It Now", style: .default, handler: { (_) in
+            self.sendUserToAppStore()
+            self.view.removeFromSuperview()
+        }))
+        
+        self.present(rateInAppStoreAlertController, animated: true, completion: nil)
+    }
+    
+}
 
 extension EggRatingViewController: RateViewDelegate {
     

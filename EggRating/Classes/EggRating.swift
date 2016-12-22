@@ -20,8 +20,10 @@ public class EggRating: NSObject {
         
         rateViewController.view.frame = UIScreen.main.bounds
         rateViewController.view.autoresizingMask = [.flexibleHeight, .flexibleWidth]
-        
+
+        viewController.addChildViewController(rateViewController)
         viewController.view.addSubview(rateViewController.view)
+        rateViewController.didMove(toParentViewController: viewController)
     }
     
     // MARK: - Helper

@@ -44,6 +44,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                                 <state key="normal" title="Rate"/>
+                                <connections>
+                                    <action selector="rateButtonTouched:" destination="5mP-Vn-wKe" eventType="touchUpInside" id="X91-cH-3Pz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIb-DU-Auj">
                                 <rect key="frame" x="0.0" y="180" width="135" height="38"/>
@@ -51,6 +54,9 @@
                                     <constraint firstAttribute="height" constant="38" id="LtE-DE-ZbR"/>
                                 </constraints>
                                 <state key="normal" title="Not Now"/>
+                                <connections>
+                                    <action selector="cancelButtonTouched:" destination="5mP-Vn-wKe" eventType="touchUpInside" id="PCz-pT-Xjo"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rate This App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRC-mx-iIY">
                                 <rect key="frame" x="16" y="88" width="238" height="30"/>
