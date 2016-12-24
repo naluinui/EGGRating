@@ -13,11 +13,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        EggRating.showRateUsInView(viewController: self)
+        EggRating.promptRateUsIfNeeded(viewController: self)
     }
 
     @IBAction func rateButtonTouched(_ sender: UIButton) {
-        EggRating.showRateUsInView(viewController: self)
+        EggRating.promptRateUs(viewController: self)
     }
     
     override func didReceiveMemoryWarning() {

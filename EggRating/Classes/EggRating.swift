@@ -10,8 +10,14 @@ import UIKit
 
 public class EggRating: NSObject {
     
-    public static var itunesId = ""
+    public static var itunesId = "" {
+        didSet {
+            lastOpenAppDate = Date()
+        }
+    }
+    
     public static var minRatingToAppStore = 4.0
+    public static var daysUntilPrompt = 10
     
     // MARK: - Star Properties
     public static var starFillColor = UIColor(red: 255/255, green: 181/255, blue: 17/255, alpha: 1)
@@ -33,10 +39,29 @@ public class EggRating: NSObject {
     public static var appStoreDismissButtonTitleText = "Cancel"
     public static var appStoreRateButtonTitleText = "Rate It Now"
     
-    public static func showRateUsInView(viewController: UIViewController) {
+    public static var shouldPromptForRating: Bool {
+        
+        let daysFromLastOpenApp = Calendar.current.dateComponents([.day], from: lastOpenAppDate, to: Date()).day ?? 0
+        
+        if daysFromLastOpenApp < daysUntilPrompt {
+            print("[EggRating] It's not the day until prompt yet.")
+            return false
+        }
+        
+        return true
+    }
+
+    public static func promptRateUsIfNeeded(viewController: UIViewController) {
+        if shouldPromptForRating {
+            self.promptRateUs(viewController: viewController)
+        }
+    }
+    
+    public static func promptRateUs(viewController: UIViewController) {
         
         if itunesId == "" {
-            print("[EggRating Warning] - please provide us your iTune ID")
+            print("[EggRating] itunesId is required.")
+            print("=> Please provide us your iTune ID by using EggRating.ituneId = \"YOUR-ITUNES-ID\" in AppDelegate.")
             return
         }
         
@@ -53,6 +78,8 @@ public class EggRating: NSObject {
     }
     
     // MARK: - Helper
+    
+    // MARK: - View
     
     private static var rateViewFromNib: UIViewController? {
         let podBundle = Bundle(for: EggRating.self)
@@ -73,5 +100,18 @@ public class EggRating: NSObject {
     }
     
     // MARK: cache
+    
+    fileprivate static let userDefaults = UserDefaults.standard
+    
+    fileprivate static var lastOpenAppDate: Date {
+        set(date) {
+            userDefaults.set(date, forKey: EggRatingUserDefaultsKey.lastOpenAppKey.rawValue)
+        } get {
+            return userDefaults.object(forKey: EggRatingUserDefaultsKey.lastOpenAppKey.rawValue) as? Date ?? Date()
+        }
+    }
+}
 
+enum EggRatingUserDefaultsKey: String {
+    case lastOpenAppKey = "EggRatingLastOpenApp"
 }
