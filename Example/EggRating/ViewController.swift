@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         EggRating.promptRateUsIfNeeded(viewController: self)
+        EggRating.delegate = self
     }
 
     @IBAction func rateButtonTouched(_ sender: UIButton) {
@@ -31,3 +32,21 @@ class ViewController: UIViewController {
 
 }
 
+extension ViewController: EggRatingDelegate {
+    
+    func didRate(rating: Double) {
+        print("didRate: \(rating)")
+    }
+    
+    func didRateOnAppStore() {
+        print("didRateOnAppStore")
+    }
+    
+    func didIgnoreToRate() {
+        print("didIgnoreToRate")
+    }
+    
+    func didIgnoreToRateOnAppStore() {
+        print("didIgnoreToRateOnAppStore")
+    }
+}

@@ -10,6 +10,8 @@ import UIKit
 
 public class EggRating: NSObject {
     
+    public static var delegate: EggRatingDelegate?
+    
     public static var itunesId = ""
     
     public static var minRatingToAppStore = 4.0

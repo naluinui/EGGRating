@@ -9,7 +9,16 @@
 import UIKit
 import RateView
 
+public protocol EggRatingDelegate {
+    func didRate(rating rating: Double)
+    func didIgnoreToRate()
+    func didRateOnAppStore()
+    func didIgnoreToRateOnAppStore()
+}
+
 class EggRatingViewController: UIViewController {
+    
+    fileprivate let delegate = EggRating.delegate
     
     fileprivate var rating: Double = 0.0 {
         didSet {
@@ -83,6 +92,8 @@ class EggRatingViewController: UIViewController {
         }
         
         UIApplication.shared.openURL(url)
+        
+        delegate?.didRateOnAppStore()
     }
     
     // MARK: - Action
@@ -104,6 +115,8 @@ class EggRatingViewController: UIViewController {
         } else {
             showDisadvantageAlertController()
         }
+        
+        delegate?.didRate(rating: rating)
     }
     
     // MARK: Alert
@@ -125,6 +138,7 @@ class EggRatingViewController: UIViewController {
         
         rateInAppStoreAlertController.addAction(UIAlertAction(title: EggRating.appStoreDismissButtonTitleText, style: .default, handler: { (_) in
             self.view.removeFromSuperview()
+            self.delegate?.didIgnoreToRateOnAppStore()
         }))
         
         rateInAppStoreAlertController.addAction(UIAlertAction(title: EggRating.appStoreRateButtonTitleText, style: .default, handler: { (_) in
