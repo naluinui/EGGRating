@@ -78,6 +78,11 @@ class EggRatingViewController: UIViewController {
     
     func sendUserToAppStore() {
         
+        guard let url = NSURL(string: "itms-apps://itunes.apple.com/app/id\(EggRating.itunesId)") as? URL else {
+           return
+        }
+        
+        UIApplication.shared.openURL(url)
     }
     
     // MARK: - Action
