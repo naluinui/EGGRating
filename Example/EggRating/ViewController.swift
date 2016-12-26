@@ -20,6 +20,10 @@ class ViewController: UIViewController {
         EggRating.promptRateUs(viewController: self)
     }
     
+    @IBAction func rateIfNeedButtonTouched(_ sender: UIButton) {
+        EggRating.promptRateUsIfNeeded(viewController: self)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
