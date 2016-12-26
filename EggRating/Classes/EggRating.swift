@@ -10,11 +10,7 @@ import UIKit
 
 public class EggRating: NSObject {
     
-    public static var itunesId = "" {
-        didSet {
-            lastOpenAppDate = Date()
-        }
-    }
+    public static var itunesId = ""
     
     public static var minRatingToAppStore = 4.0
     public static var daysUntilPrompt = 10
@@ -41,9 +37,9 @@ public class EggRating: NSObject {
     
     public static var shouldPromptForRating: Bool {
         
-        let daysFromLastOpenApp = Calendar.current.dateComponents([.day], from: lastOpenAppDate, to: Date()).day ?? 0
+        let daysFromLastRemind = Calendar.current.dateComponents([.day], from: lastRemind, to: Date()).day ?? 0
         
-        if daysFromLastOpenApp < daysUntilPrompt {
+        if daysFromLastRemind < daysUntilPrompt {
             print("[EggRating] It's not the day until prompt yet.")
             return false
         }
@@ -103,15 +99,22 @@ public class EggRating: NSObject {
     
     fileprivate static let userDefaults = UserDefaults.standard
     
-    fileprivate static var lastOpenAppDate: Date {
+    fileprivate static var lastRemind: Date {
         set(date) {
-            userDefaults.set(date, forKey: EggRatingUserDefaultsKey.lastOpenAppKey.rawValue)
+            userDefaults.set(date, forKey: EggRatingUserDefaultsKey.lastRemindKey.rawValue)
         } get {
-            return userDefaults.object(forKey: EggRatingUserDefaultsKey.lastOpenAppKey.rawValue) as? Date ?? Date()
+            
+            guard let lastOpenDate = userDefaults.object(forKey: EggRatingUserDefaultsKey.lastRemindKey.rawValue) as? Date else {
+                let today = Date()
+                userDefaults.set(today, forKey: EggRatingUserDefaultsKey.lastRemindKey.rawValue)
+                return today
+            }
+            
+            return lastOpenDate
         }
     }
 }
 
 enum EggRatingUserDefaultsKey: String {
-    case lastOpenAppKey = "EggRatingLastOpenApp"
+    case lastRemindKey = "EggRatingLastRemind"
 }
