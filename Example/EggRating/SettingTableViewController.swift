@@ -33,14 +33,14 @@ class SettingTableViewController: UITableViewController {
             self.title = "Day until prompt"
             self.textField.text = "\(EggRating.daysUntilPrompt)"
         case .daysRemindPeriod:
-            self.title = "Day remind period"
+            self.title = "Remind period"
             self.textField.text = "\(EggRating.remindPeriod)"
         case .minutesUntilPrompt:
             self.title = "Minute until prompt"
             self.textField.text = "\(EggRating.minuteUntilPrompt)"
         case .minitesRemindPeriod:
             self.title = "Minute remind period"
-            self.textField.text = "\(EggRating.remindPeriod)"
+            self.textField.text = "\(EggRating.minuteRemindPeriod)"
         }
     }
     
