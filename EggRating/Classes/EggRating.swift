@@ -22,6 +22,36 @@ public class EggRating: NSObject {
     
     fileprivate static let currentVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "0.0.0"
     
+    // MARK: - Debugging Properties
+    
+    public static var debugMode = false {
+        didSet {
+            if debugMode {
+                print("[EggRating] ‼️ Debug mode is now on. Don't forget to set it back to be 'false' before uploading to the App Store.")
+            }
+        }
+    }
+    
+    fileprivate static var _minuteUntilPrompt = 0
+    
+    public static var minuteUntilPrompt: Int {
+        set(minute) {
+            _minuteUntilPrompt = minute
+        } get {
+            return debugMode ? _minuteUntilPrompt : daysUntilPrompt * 60 * 24
+        }
+    }
+    
+    fileprivate static var _minuteRemindPeriod = 0
+    
+    public static var minuteRemindPeriod: Int {
+        set(minute) {
+            _minuteRemindPeriod = minute
+        } get {
+            return debugMode ? _minuteRemindPeriod : remindPeriod * 60 * 24
+        }
+    }
+    
     // MARK: - Star Properties
     public static var starFillColor = UIColor(red: 255/255, green: 181/255, blue: 17/255, alpha: 1)
     public static var starNormalColor = UIColor.clear
@@ -42,30 +72,30 @@ public class EggRating: NSObject {
     public static var appStoreDismissButtonTitleText = "Cancel"
     public static var appStoreRateButtonTitleText = "Rate It Now"
     
+    // MARK: - Main Methods
+    
     public static var shouldPromptForRating: Bool {
         
-        let daysFromFirstUsed = Calendar.current.dateComponents([.day], from: firstUsed, to: Date()).day ?? 0
-        let daysFromLastRemind = Calendar.current.dateComponents([.day], from: lastRemind, to: Date()).day ?? 0
+        let minutesFromFirstUsed = Calendar.current.dateComponents([.minute], from: firstUsed, to: Date()).minute ?? 0
+        let minutesFromLastRemind = Calendar.current.dateComponents([.minute], from: lastRemind, to: Date()).minute ?? 0
         
-        if daysFromFirstUsed < daysUntilPrompt {
-            print("[EggRating] User has just used the app for only \(daysFromLastRemind) \(daysFromLastRemind <= 1 ? "day" : "days"). EggRating will be prompted in the next \(daysUntilPrompt - daysFromLastRemind) \(daysUntilPrompt - daysFromLastRemind <= 1 ? "day" : "days").")
+        if minutesFromFirstUsed < minuteUntilPrompt {
+            print("[EggRating] 🕑 User has just used the app for only \(minutesFromLastRemind) \(minutesFromLastRemind <= 1 ? "minute" : "minutes"). EggRating will be prompted in the next \(minuteUntilPrompt - minutesFromLastRemind) \(minuteUntilPrompt - minutesFromLastRemind <= 1 ? "minute" : "minutes").")
             return false
         }
-        
-        print("currentVersion: \(currentVersion) lastVersionRated: \(lastVersionRated)")
         
         if versionToInt(string: currentVersion).lexicographicallyPrecedes(versionToInt(string: lastVersionRated)) {
             return true
         } else if currentVersion == lastVersionRated {
-            print("[EggRating] User has already rated this version.")
+            print("[EggRating] 🙂 User has already rated this version.")
             return false
         }
         
-        if daysFromLastRemind < remindPeriod {
-            print("[EggRating] EggRating was just prompted last \(daysFromLastRemind) \(daysFromLastRemind <= 1 ? "day" : "days") ago. EggRating will be prompted again in the next \(remindPeriod - daysFromLastRemind) \(remindPeriod - daysFromLastRemind <= 1 ? "day" : "days").")
+        if minutesFromLastRemind < minuteRemindPeriod {
+            print("[EggRating] 🕙 EggRating was just prompted last \(minutesFromLastRemind) \(minutesFromLastRemind <= 1 ? "minute" : "minutes") ago. EggRating will be prompted again in the next \(minuteRemindPeriod - minutesFromLastRemind) \(remindPeriod - minutesFromLastRemind <= 1 ? "minute" : "minutes").")
             return false
         }
-        
+
         return true
     }
 
@@ -79,7 +109,7 @@ public class EggRating: NSObject {
     public static func promptRateUs(viewController: UIViewController) {
         
         if itunesId == "" {
-            print("[EggRating] itunesId is required.")
+            print("[EggRating] ‼️ itunesId is required.")
             print("=> Please provide us your iTune ID by using EggRating.ituneId = \"YOUR-ITUNES-ID\" in AppDelegate.")
             return
         }

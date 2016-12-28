@@ -99,14 +99,12 @@ class EggRatingViewController: UIViewController {
     // MARK: - Action
 
     @IBAction func cancelButtonTouched(_ sender: UIButton) {
-        print("[Action] cancelButtonTouched")
         self.view.backgroundColor = UIColor.clear
         self.containerView.isHidden = true
         self.view.removeFromSuperview()
     }
     
     @IBAction func rateButtonTouched(_ sender: UIButton) {
-        print("[Action] rateButtonTouched")
         self.view.backgroundColor = UIColor.clear
         self.containerView.isHidden = true
         

@@ -20,6 +20,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         EggRating.itunesId = "123456789"
         EggRating.minRatingToAppStore = 3.5
         
+        EggRating.debugMode = true
+        EggRating.minuteUntilPrompt = 10
+        EggRating.minuteRemindPeriod = 1
+        
         return true
     }
 
