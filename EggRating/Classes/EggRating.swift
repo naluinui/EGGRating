@@ -20,7 +20,7 @@ public class EggRating: NSObject {
     
     public static var remindPeriod = 10
     
-    fileprivate static let currentVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "0.0.0"
+    public static let currentAppVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "0.0.0"
     
     // MARK: - Debugging Properties
     
@@ -84,9 +84,9 @@ public class EggRating: NSObject {
             return false
         }
         
-        if versionToInt(string: currentVersion).lexicographicallyPrecedes(versionToInt(string: lastVersionRated)) {
+        if versionToInt(string: currentAppVersion).lexicographicallyPrecedes(versionToInt(string: lastVersionRated)) {
             return true
-        } else if currentVersion == lastVersionRated {
+        } else if currentAppVersion == lastVersionRated {
             print("[EggRating] 🙂 User has already rated this version.")
             return false
         }
@@ -157,7 +157,7 @@ public class EggRating: NSObject {
     
     fileprivate static let userDefaults = UserDefaults.standard
     
-    fileprivate static var firstUsed: Date {
+    public static private(set) var firstUsed: Date {
         set (date) {
             userDefaults.set(date, forKey: EggRatingUserDefaultsKey.firstUsedKey.rawValue)
         } get {
@@ -171,7 +171,7 @@ public class EggRating: NSObject {
         }
     }
     
-    fileprivate static var lastRemind: Date {
+    public static private(set) var lastRemind: Date {
         set(date) {
             userDefaults.set(date, forKey: EggRatingUserDefaultsKey.lastRemindKey.rawValue)
         } get {
@@ -186,7 +186,7 @@ public class EggRating: NSObject {
         }
     }
     
-    fileprivate static var lastVersionRated: String {
+    public static private(set) var lastVersionRated: String {
         set(version) {
             userDefaults.set(version, forKey: EggRatingUserDefaultsKey.lastVersionRatedKey.rawValue)
         } get {

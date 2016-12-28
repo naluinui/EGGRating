@@ -15,6 +15,8 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		B568BB98BE0E38BD78BC3C1E /* Pods_EggRating_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 270F83DDD751EB1170AC603C /* Pods_EggRating_Example.framework */; };
 		C19EE08A5B9F312D0F24182A /* Pods_EggRating_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C9E19360A4B5727DBBE46F8 /* Pods_EggRating_Tests.framework */; };
+		FD7B82261E13BE9F005CBA7A /* EggRatingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7B82251E13BE9F005CBA7A /* EggRatingTableViewController.swift */; };
+		FD7B82281E13CFF7005CBA7A /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7B82271E13CFF7005CBA7A /* SettingTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,8 @@
 		AA52790C7B45FC9180DC6875 /* EggRating.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = EggRating.podspec; path = ../EggRating.podspec; sourceTree = "<group>"; };
 		D9673342989B66420C37280A /* Pods-EggRating_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EggRating_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-EggRating_Example/Pods-EggRating_Example.release.xcconfig"; sourceTree = "<group>"; };
 		F14ADD6B6B43919677F71246 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		FD7B82251E13BE9F005CBA7A /* EggRatingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EggRatingTableViewController.swift; sourceTree = "<group>"; };
+		FD7B82271E13CFF7005CBA7A /* SettingTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		FFEBDD5E184893434B284357 /* Pods-EggRating_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EggRating_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EggRating_Tests/Pods-EggRating_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +99,8 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				FD7B82251E13BE9F005CBA7A /* EggRatingTableViewController.swift */,
+				FD7B82271E13CFF7005CBA7A /* SettingTableViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -363,6 +369,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD7B82281E13CFF7005CBA7A /* SettingTableViewController.swift in Sources */,
+				FD7B82261E13BE9F005CBA7A /* EggRatingTableViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
