@@ -112,6 +112,10 @@ class EggRatingViewController: UIViewController {
         
         if rating >= EggRating.minRatingToAppStore {
             showRateInAppStoreAlertController()
+            
+            // only save last rated version if user rates more than mininum score
+            UserDefaults.standard.set(Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "0.0.0", forKey: EggRatingUserDefaultsKey.lastVersionRatedKey.rawValue)
+            
         } else {
             showDisadvantageAlertController()
         }

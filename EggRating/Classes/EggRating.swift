@@ -20,6 +20,8 @@ public class EggRating: NSObject {
     
     public static var remindPeriod = 10
     
+    fileprivate static let currentVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "0.0.0"
+    
     // MARK: - Star Properties
     public static var starFillColor = UIColor(red: 255/255, green: 181/255, blue: 17/255, alpha: 1)
     public static var starNormalColor = UIColor.clear
@@ -46,7 +48,16 @@ public class EggRating: NSObject {
         let daysFromLastRemind = Calendar.current.dateComponents([.day], from: lastRemind, to: Date()).day ?? 0
         
         if daysFromFirstUsed < daysUntilPrompt {
-            print("[EggRating] Users have just used the app for only \(daysFromLastRemind) \(daysFromLastRemind <= 1 ? "day" : "days"). EggRating will be prompted in the next \(daysUntilPrompt - daysFromLastRemind) \(daysUntilPrompt - daysFromLastRemind <= 1 ? "day" : "days").")
+            print("[EggRating] User has just used the app for only \(daysFromLastRemind) \(daysFromLastRemind <= 1 ? "day" : "days"). EggRating will be prompted in the next \(daysUntilPrompt - daysFromLastRemind) \(daysUntilPrompt - daysFromLastRemind <= 1 ? "day" : "days").")
+            return false
+        }
+        
+        print("currentVersion: \(currentVersion) lastVersionRated: \(lastVersionRated)")
+        
+        if versionToInt(string: currentVersion).lexicographicallyPrecedes(versionToInt(string: lastVersionRated)) {
+            return true
+        } else if currentVersion == lastVersionRated {
+            print("[EggRating] User has already rated this version.")
             return false
         }
         
@@ -107,6 +118,11 @@ public class EggRating: NSObject {
         return nil
     }
     
+    // MARK: Version
+    fileprivate static func versionToInt(string: String) -> [Int] {
+        return string.components(separatedBy: ".").map { Int.init($0) ?? 0 }
+    }
+    
     // MARK: Cache
     
     fileprivate static let userDefaults = UserDefaults.standard
@@ -139,9 +155,18 @@ public class EggRating: NSObject {
             return lastOpenDate
         }
     }
+    
+    fileprivate static var lastVersionRated: String {
+        set(version) {
+            userDefaults.set(version, forKey: EggRatingUserDefaultsKey.lastVersionRatedKey.rawValue)
+        } get {
+            return userDefaults.string(forKey: EggRatingUserDefaultsKey.lastVersionRatedKey.rawValue) ?? "0.0.0"
+        }
+    }
 }
 
 enum EggRatingUserDefaultsKey: String {
     case firstUsedKey = "EggRatingFirstUsed"
     case lastRemindKey = "EggRatingLastRemind"
+    case lastVersionRatedKey = "EggRatingLastVersionRated"
 }
