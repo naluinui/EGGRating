@@ -64,7 +64,7 @@ class SettingTableViewController: UITableViewController {
         case .minutesUntilPrompt:
             EggRating.minuteUntilPrompt = Int(value) ?? 0
         case .minitesRemindPeriod:
-            EggRating.remindPeriod = Int(value) ?? 0
+            EggRating.minuteRemindPeriod = Int(value) ?? 0
         }
     }
 
