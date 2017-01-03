@@ -118,12 +118,21 @@ public class EggRating: NSObject {
             return
         }
         
-        rateViewController.view.frame = UIScreen.main.bounds
-        rateViewController.view.autoresizingMask = [.flexibleHeight, .flexibleWidth]
-
-        viewController.addChildViewController(rateViewController)
-        viewController.view.addSubview(rateViewController.view)
-        rateViewController.didMove(toParentViewController: viewController)
+        if #available(iOS 8.0, *) {
+            rateViewController.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+            rateViewController.providesPresentationContextTransitionStyle = true
+            rateViewController.definesPresentationContext = true
+        } else {
+            rateViewController.modalPresentationStyle = UIModalPresentationStyle.currentContext
+        }
+        
+        if let navigationController = viewController.navigationController {
+            navigationController.present(rateViewController, animated: false, completion: nil)
+        } else if let tabbarController = viewController.tabBarController {
+            tabbarController.present(rateViewController, animated: false, completion: nil)
+        } else {
+            viewController.present(rateViewController, animated: false, completion: nil)
+        }
     }
     
     // MARK: - Helper
