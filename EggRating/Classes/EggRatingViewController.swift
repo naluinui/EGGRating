@@ -9,6 +9,8 @@
 import UIKit
 import RateView
 
+/// The protocol of the actions in EggRatingView.
+
 public protocol EggRatingDelegate {
     func didRate(rating rating: Double)
     func didIgnoreToRate()
