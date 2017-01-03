@@ -23,7 +23,7 @@ class EggRatingTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        EggRating.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -107,5 +107,24 @@ class EggRatingTableViewController: UITableViewController {
         vc.type = identifier
         self.navigationController?.pushViewController(vc, animated: true)
         
+    }
+}
+
+extension EggRatingTableViewController: EggRatingDelegate {
+    
+    func didRate(rating: Double) {
+        print("didRate: \(rating)")
+    }
+    
+    func didRateOnAppStore() {
+        print("didRateOnAppStore")
+    }
+    
+    func didIgnoreToRate() {
+        print("didIgnoreToRate")
+    }
+    
+    func didIgnoreToRateOnAppStore() {
+        print("didIgnoreToRateOnAppStore")
     }
 }
