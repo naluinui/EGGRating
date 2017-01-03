@@ -101,6 +101,7 @@ class EggRatingViewController: UIViewController {
     @IBAction func cancelButtonTouched(_ sender: UIButton) {
         self.view.backgroundColor = UIColor.clear
         self.containerView.isHidden = true
+        self.delegate?.didIgnoreToRate()
         self.dismiss(animated: false, completion: nil)
     }
     
