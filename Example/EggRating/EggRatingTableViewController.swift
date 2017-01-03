@@ -24,6 +24,7 @@ class EggRatingTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         EggRating.delegate = self
+        EggRating.promptRateUsIfNeeded(viewController: self)
     }
     
     override func viewWillAppear(_ animated: Bool) {
