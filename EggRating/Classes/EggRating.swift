@@ -63,6 +63,8 @@ public class EggRating: NSObject {
     
     fileprivate static var _minuteRemindPeriod = 0
     
+    /// The application version property, You can set and get the value you want only when debug mode is on. If debug mode is off, this will return the current version of the application which is in the bundle directory.
+    
     public static var appVersion: String {
         set(version) {
             _appVersion = version

@@ -15,6 +15,7 @@ enum SettingType {
     case daysRemindPeriod
     case minutesUntilPrompt
     case minitesRemindPeriod
+    case minimumScore
 }
 
 class SettingTableViewController: UITableViewController {
@@ -24,6 +25,8 @@ class SettingTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        textField.delegate = self
         
         guard let type = type else {
             return
@@ -46,6 +49,10 @@ class SettingTableViewController: UITableViewController {
         case .minitesRemindPeriod:
             self.title = "Minute remind period"
             self.textField.text = "\(EggRating.minuteRemindPeriod)"
+        case .minimumScore:
+            self.title = "Minimum score"
+            self.textField.text = "\(EggRating.minRatingToAppStore)"
+            self.textField.keyboardType = .decimalPad
         }
     }
     
@@ -72,6 +79,8 @@ class SettingTableViewController: UITableViewController {
             EggRating.minuteUntilPrompt = Int(value) ?? 0
         case .minitesRemindPeriod:
             EggRating.minuteRemindPeriod = Int(value) ?? 0
+        case .minimumScore:
+            EggRating.minRatingToAppStore = Double(value) ?? 0
         }
     }
 
@@ -80,4 +89,21 @@ class SettingTableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
 
+}
+
+extension SettingTableViewController: UITextFieldDelegate {
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        if let type = type, type == .minimumScore {
+            if let value = textField.text {
+                if Double(value + string) ?? 0 > 5 {
+                    return false
+                }
+            }
+            return true
+        }
+        
+        return true
+    }
 }

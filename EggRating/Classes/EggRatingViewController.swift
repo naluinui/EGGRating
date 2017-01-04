@@ -111,7 +111,9 @@ class EggRatingViewController: UIViewController {
         self.view.backgroundColor = UIColor.clear
         self.containerView.isHidden = true
         
-        if rating >= EggRating.minRatingToAppStore {
+        let minRatingToAppStore = EggRating.minRatingToAppStore > 5 ? 5 : EggRating.minRatingToAppStore
+        
+        if rating >= minRatingToAppStore {
             showRateInAppStoreAlertController()
             
             // only save last rated version if user rates more than mininum score

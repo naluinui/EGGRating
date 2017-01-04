@@ -17,6 +17,7 @@ class EggRatingTableViewController: UITableViewController {
     @IBOutlet weak var minuteRemindPeriodLabel: UILabel!
     @IBOutlet weak var dayRemindPeriodLabel: UILabel!
     @IBOutlet weak var appVersionLabel: UILabel!
+    @IBOutlet weak var minimumScoreLabel: UILabel!
     @IBOutlet weak var currentRatedVersionLabel: UILabel!
     @IBOutlet weak var lastestRateVersionLabel: UILabel!
     @IBOutlet weak var firstDateUsingAppLabel: UILabel!
@@ -45,6 +46,7 @@ class EggRatingTableViewController: UITableViewController {
         minuteRemindPeriodLabel.text = "\(EggRating.minuteRemindPeriod)"
         dayRemindPeriodLabel.text = "\(EggRating.remindPeriod)"
         appVersionLabel.text = "\(EggRating.appVersion)"
+        minimumScoreLabel.text = "\(EggRating.minRatingToAppStore)"
         
         currentRatedVersionLabel.text = "\(EggRating.currentAppVersion)"
         lastestRateVersionLabel.text = "\(EggRating.lastVersionRated)"
@@ -99,6 +101,10 @@ class EggRatingTableViewController: UITableViewController {
             case 5:
                 if EggRating.debugMode {
                     pushToEditVC(identifier: .appVersion)
+                }
+            case 6:
+                if EggRating.debugMode {
+                    pushToEditVC(identifier: .minimumScore)
                 }
             default:
                 break
