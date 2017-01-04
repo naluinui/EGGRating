@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/EggRating.svg?style=flat)](http://cocoapods.org/pods/EggRating)
 [![Platform](https://img.shields.io/cocoapods/p/EggRating.svg?style=flat)](http://cocoapods.org/pods/EggRating)
 
-An iOS app review tool for getting only good reviews in the App Store!'
+Increase your iOS app reviews with EggRating. EggRating will prompt users to rate the app after they have used it a certain number of times or after a set time period. If the user rates more than a certain number, EggRating will take them right to the app store where they can leave their good review.
 
 ## Example
 
