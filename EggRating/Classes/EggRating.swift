@@ -63,6 +63,16 @@ public class EggRating: NSObject {
     
     fileprivate static var _minuteRemindPeriod = 0
     
+    public static var appVersion: String {
+        set(version) {
+            _appVersion = version
+        } get {
+            return debugMode ? _appVersion : currentAppVersion
+        }
+    }
+    
+    fileprivate static var _appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "0.0.0"
+    
     // MARK: - Star Properties
     
     /// The color of selected stars, default is yellow.
@@ -122,9 +132,9 @@ public class EggRating: NSObject {
             return false
         }
         
-        if versionToInt(string: currentAppVersion).lexicographicallyPrecedes(versionToInt(string: lastVersionRated)) {
+        if versionToInt(string: appVersion).lexicographicallyPrecedes(versionToInt(string: lastVersionRated)) {
             return true
-        } else if currentAppVersion == lastVersionRated {
+        } else if appVersion == lastVersionRated {
             print("[EggRating] 🙂 User has already rated this version.")
             return false
         }

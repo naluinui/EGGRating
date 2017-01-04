@@ -16,6 +16,7 @@ class EggRatingTableViewController: UITableViewController {
     @IBOutlet weak var dayUntilPromptLabel: UILabel!
     @IBOutlet weak var minuteRemindPeriodLabel: UILabel!
     @IBOutlet weak var dayRemindPeriodLabel: UILabel!
+    @IBOutlet weak var appVersionLabel: UILabel!
     @IBOutlet weak var currentRatedVersionLabel: UILabel!
     @IBOutlet weak var lastestRateVersionLabel: UILabel!
     @IBOutlet weak var firstDateUsingAppLabel: UILabel!
@@ -43,6 +44,7 @@ class EggRatingTableViewController: UITableViewController {
         dayUntilPromptLabel.text = "\(EggRating.daysUntilPrompt)"
         minuteRemindPeriodLabel.text = "\(EggRating.minuteRemindPeriod)"
         dayRemindPeriodLabel.text = "\(EggRating.remindPeriod)"
+        appVersionLabel.text = "\(EggRating.appVersion)"
         
         currentRatedVersionLabel.text = "\(EggRating.currentAppVersion)"
         lastestRateVersionLabel.text = "\(EggRating.lastVersionRated)"
@@ -53,6 +55,7 @@ class EggRatingTableViewController: UITableViewController {
         dayRemindPeriodLabel.textColor = !EggRating.debugMode ? UIColor.black : UIColor.gray
         minuteRemindPeriodLabel.textColor = EggRating.debugMode ? UIColor.black : UIColor.gray
         minuteUntilPromptLabel.textColor = EggRating.debugMode ? UIColor.black :UIColor.gray
+        appVersionLabel.textColor = EggRating.debugMode ? UIColor.black : UIColor.gray
     }
     
     // MARK: - Action
@@ -93,6 +96,10 @@ class EggRatingTableViewController: UITableViewController {
                 if EggRating.debugMode {
                     pushToEditVC(identifier: .minitesRemindPeriod)
                 }
+            case 5:
+                if EggRating.debugMode {
+                    pushToEditVC(identifier: .appVersion)
+                }
             default:
                 break
             }
@@ -115,6 +122,7 @@ extension EggRatingTableViewController: EggRatingDelegate {
     
     func didRate(rating: Double) {
         print("didRate: \(rating)")
+        setupView()
     }
     
     func didRateOnAppStore() {

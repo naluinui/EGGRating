@@ -10,6 +10,7 @@ import UIKit
 import EggRating
 
 enum SettingType {
+    case appVersion
     case daysUntilPrompt
     case daysRemindPeriod
     case minutesUntilPrompt
@@ -29,6 +30,10 @@ class SettingTableViewController: UITableViewController {
         }
 
         switch type {
+        case .appVersion:
+            self.title = "App version"
+            self.textField.text = "\(EggRating.appVersion)"
+            self.textField.keyboardType = .decimalPad
         case .daysUntilPrompt:
             self.title = "Day until prompt"
             self.textField.text = "\(EggRating.daysUntilPrompt)"
@@ -57,6 +62,8 @@ class SettingTableViewController: UITableViewController {
         }
         
         switch type {
+        case .appVersion:
+            EggRating.appVersion = value
         case .daysUntilPrompt:
             EggRating.daysUntilPrompt = Int(value) ?? 0
         case .daysRemindPeriod:
