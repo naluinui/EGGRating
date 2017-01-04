@@ -19,6 +19,11 @@
     "ios": "8.0"
   },
   "source_files": "EggRating/Classes/**/*",
+  "resource_bundles": {
+    "EggRating": [
+      "EggRating/Assets/**/*.xib"
+    ]
+  },
   "dependencies": {
     "RateView": [
 
