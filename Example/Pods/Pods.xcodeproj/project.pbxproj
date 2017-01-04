@@ -7,78 +7,67 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		061C87BF54D572867DA4E871AECF224A /* RateView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EB45AF8372C458543E21A1D7A2C07F5 /* RateView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0AF98DEA306016A11CBB6F4499D29712 /* EggRatingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CCFDDE206DDEDECB2D9D1FAE3286A488 /* EggRatingViewController.xib */; };
-		245F0E40CAA2B791C74F79B8827AB6EE /* EggRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56576E9DF563D45968086EAFF4327A90 /* EggRating.swift */; };
-		2A69A95B30A66C950B4E351822406EE9 /* RateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA04744DF36CC527F76C8A95F3986E7 /* RateView.m */; };
-		2BE07DD31FB661A76543CF05E560B65A /* EggRating.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 033BA4F0E111F5540663A07107E1C70C /* EggRating.bundle */; };
-		495C5322DF471AE29F901AEFECB215C4 /* RateView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BF4137D0FC52F60307D1CA86133DC41 /* RateView.framework */; };
+		06A4628A491D78D58F6C04CDE1EBFFCB /* RateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA04744DF36CC527F76C8A95F3986E7 /* RateView.m */; };
+		0B84723FEF48AADF86247A1C06FF9E79 /* EggRatingViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = A70CD5735B61964974001224C4AF420B /* EggRatingViewController.xib */; };
+		0E21546BC065975181CCF9B97B811F09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928DD5D884142387B33CD4BF7AF0A813 /* Foundation.framework */; };
+		28C75B5E23464B41E94012757FC01B9D /* EggRating-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D8C930184DEBA385A9A483A54501EF1 /* EggRating-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33DD7FB5F18541193A9181798B994B53 /* RateView.h in Headers */ = {isa = PBXBuildFile; fileRef = 92B9DE7B2147E734173A255380FF8FF9 /* RateView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4B302DC4BFE9C96670D5BF5F8E8AB407 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928DD5D884142387B33CD4BF7AF0A813 /* Foundation.framework */; };
-		6DA353EFC919CBD837D0E2E995578AB4 /* EggRating-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AF2B321F14B3BDACE217D1E87A2E7617 /* EggRating-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64099D4544A415E6B615FA44E0CE7FFB /* EggRating-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A93226ECB7BEF208B7501DB59319C52A /* EggRating-dummy.m */; };
+		6CF8FA41E2B67FFE7495A77C18AC551D /* RateView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EB45AF8372C458543E21A1D7A2C07F5 /* RateView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7E104F1355DFAA3CDCC5E98A7783B4F0 /* Pods-EggRating_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AEBE97B1DDB8D9461D5BAF094E6D1A47 /* Pods-EggRating_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		837D851A6382C8659A0839A1F59B14C5 /* EggRatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA2AD277AD8DD90879DFE3C6CD65C40 /* EggRatingViewController.swift */; };
-		A43191099C0CD97FC0E3A85880E67171 /* EggRating-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D133015A180285B821A3A101F225EE6A /* EggRating-dummy.m */; };
+		9DFE70BC155AAFB88ADB6ABF80C99CCD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928DD5D884142387B33CD4BF7AF0A813 /* Foundation.framework */; };
 		B3D89B8A12142A7C10447DFE5666822A /* Pods-EggRating_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E50EC641CF8697D74220AA27E59D815 /* Pods-EggRating_Example-dummy.m */; };
-		B934E8047ECA2BE4C7A0358EBDB7BA37 /* RateView.h in Headers */ = {isa = PBXBuildFile; fileRef = 92B9DE7B2147E734173A255380FF8FF9 /* RateView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B9AF9B42C7278C63834197FE6C3F0D69 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928DD5D884142387B33CD4BF7AF0A813 /* Foundation.framework */; };
-		D2B55D46BF6F319BF2109AD476EAC543 /* EggRatingViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = CCFDDE206DDEDECB2D9D1FAE3286A488 /* EggRatingViewController.xib */; };
+		C42D557B1CA8C01FEFAC89AEB8FA5A0B /* EggRatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40F7620D5351F87EFAF5C762B5204595 /* EggRatingViewController.swift */; };
+		C950A36C389771E3F9060BB29A8213EE /* RateView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BF4137D0FC52F60307D1CA86133DC41 /* RateView.framework */; };
+		D6C7E93BBCB0EFEAFBEC35C1C99871FF /* EggRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22456F90375F43CBC6AD25E39F3E9AB8 /* EggRating.swift */; };
 		DB50F0A5EFF2CC08D7391F51181BBB07 /* Pods-EggRating_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E849A7D2EFBA8110F9458FF0847CF4F4 /* Pods-EggRating_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E29BE92E2B6D4BF5D5733B7D46A9270F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928DD5D884142387B33CD4BF7AF0A813 /* Foundation.framework */; };
-		E7F676CB60074CCEA5453311E401ACA1 /* RateView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A6BC57F6B409661A8763A5D7579C2C /* RateView-dummy.m */; };
+		E6DEE4CF8D2033122EB0428104169E1C /* RateView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F1A6BC57F6B409661A8763A5D7579C2C /* RateView-dummy.m */; };
 		EB90380494B735173EB46CC3C14011F3 /* Pods-EggRating_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D88A96936187FFA83E6B657CE97E6C9 /* Pods-EggRating_Tests-dummy.m */; };
 		EF9B738B2E5F409118D41F4F91C3220F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928DD5D884142387B33CD4BF7AF0A813 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		35D390749F7E0ED2A8D4AF3DC1E68887 /* PBXContainerItemProxy */ = {
+		56487AF7D8A4724656DB801125300B9A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 98375419D9CAC203D2E7EF7210F48BA5;
-			remoteInfo = "EggRating-EggRating";
+			remoteGlobalIDString = 13EA3C0DCC793BFEF22281E01CB4F23B;
+			remoteInfo = RateView;
 		};
 		710B841199E18C06DA0AD49336A30609 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8CC88BFE9D8D11B7452FA26B47A7DFEE;
+			remoteGlobalIDString = 8316EBB250B480CB1C8BFD7DB63EEA3C;
 			remoteInfo = EggRating;
 		};
 		A2C053B3F516589A582625B53F2DB137 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0B0E838A3D32246A9D5986B2BB524567;
-			remoteInfo = RateView;
-		};
-		FE99AEA290CEDBE496B7E6FD43EA84EF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 0B0E838A3D32246A9D5986B2BB524567;
+			remoteGlobalIDString = 13EA3C0DCC793BFEF22281E01CB4F23B;
 			remoteInfo = RateView;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		033BA4F0E111F5540663A07107E1C70C /* EggRating.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = EggRating.bundle; path = EggRating.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		0CD630161E6B95E17A69E2F285BB37DC /* RateView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RateView.framework; path = RateView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1611ADDC6FADAD3FCE0CEF143AC839CB /* Pods-EggRating_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EggRating_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		1E50EC641CF8697D74220AA27E59D815 /* Pods-EggRating_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EggRating_Example-dummy.m"; sourceTree = "<group>"; };
-		202151B2385D134A58318D040DF23594 /* EggRating.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = EggRating.modulemap; sourceTree = "<group>"; };
-		2B12AF37D688CDA07F02AD0E0449531D /* ResourceBundle-EggRating-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-EggRating-Info.plist"; sourceTree = "<group>"; };
+		22456F90375F43CBC6AD25E39F3E9AB8 /* EggRating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EggRating.swift; sourceTree = "<group>"; };
 		35B82EAFE247B31D82238B2941444972 /* Pods-EggRating_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EggRating_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		40F7620D5351F87EFAF5C762B5204595 /* EggRatingViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EggRatingViewController.swift; sourceTree = "<group>"; };
 		46AC0DBCD301427E6002596445F3A4FD /* Pods-EggRating_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EggRating_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		56576E9DF563D45968086EAFF4327A90 /* EggRating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EggRating.swift; sourceTree = "<group>"; };
-		56D9D53CDFBC57D8382ECEF3498F43F9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D8C930184DEBA385A9A483A54501EF1 /* EggRating-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EggRating-umbrella.h"; sourceTree = "<group>"; };
 		5F6CF1E77855C30380A01BAF22E4A96A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60B93987CFC42FF01B35E8B35803805C /* Pods-EggRating_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EggRating_Example-resources.sh"; sourceTree = "<group>"; };
 		6BF4137D0FC52F60307D1CA86133DC41 /* RateView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RateView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D88A96936187FFA83E6B657CE97E6C9 /* Pods-EggRating_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EggRating_Tests-dummy.m"; sourceTree = "<group>"; };
+		72CF60CD0A01994DA9C7B046FA0C9CA4 /* EggRating-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EggRating-prefix.pch"; sourceTree = "<group>"; };
 		7512E480DFF6F4279D704972B5EEAAD2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7776961A859C2D56F481254DBF52221F /* EggRating-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EggRating-prefix.pch"; sourceTree = "<group>"; };
-		7BA2AD277AD8DD90879DFE3C6CD65C40 /* EggRatingViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EggRatingViewController.swift; sourceTree = "<group>"; };
+		7C576619499477FA0956193D9FC82EE8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EB45AF8372C458543E21A1D7A2C07F5 /* RateView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RateView-umbrella.h"; sourceTree = "<group>"; };
+		85DC23734619C26862EEA0A93F27D134 /* Pods_EggRating_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EggRating_Example.framework; path = "Pods-EggRating_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		86631670AF86128FE7C48793306390BC /* Pods-EggRating_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EggRating_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		924F954B2FDDFF11E287182AF58F0F01 /* Pods-EggRating_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EggRating_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		925D7452FD5DD919F22FF5F3A1B80444 /* Pods-EggRating_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EggRating_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -87,53 +76,29 @@
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9B0EC8348B122AFC5B7090799F15BC4B /* Pods-EggRating_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EggRating_Tests-resources.sh"; sourceTree = "<group>"; };
 		9BA04744DF36CC527F76C8A95F3986E7 /* RateView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RateView.m; path = RateView/RateView.m; sourceTree = "<group>"; };
-		9D625987D883EE715B545F95782B7B25 /* Pods_EggRating_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EggRating_Example.framework; path = "Pods-EggRating_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A35A8DA1E932984A664BB6D25A2BA137 /* Pods-EggRating_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EggRating_Example-frameworks.sh"; sourceTree = "<group>"; };
-		A4F4E821A8BFCA1108E33F887CC62E4F /* Pods_EggRating_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EggRating_Tests.framework; path = "Pods-EggRating_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A70CD5735B61964974001224C4AF420B /* EggRatingViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = EggRatingViewController.xib; sourceTree = "<group>"; };
 		A739675DAC39B062A2AA9EF7940AA554 /* Pods-EggRating_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EggRating_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A93226ECB7BEF208B7501DB59319C52A /* EggRating-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EggRating-dummy.m"; sourceTree = "<group>"; };
 		AE259194009CD2D35ED451DBEA893271 /* Pods-EggRating_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-EggRating_Example.modulemap"; sourceTree = "<group>"; };
 		AEBE97B1DDB8D9461D5BAF094E6D1A47 /* Pods-EggRating_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EggRating_Tests-umbrella.h"; sourceTree = "<group>"; };
-		AF2B321F14B3BDACE217D1E87A2E7617 /* EggRating-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EggRating-umbrella.h"; sourceTree = "<group>"; };
 		B0357DE874E3E931257BCF4C892E99AA /* Pods-EggRating_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EggRating_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		B3213ECA3ED2965E1A0EAFF2DF276970 /* RateView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RateView-prefix.pch"; sourceTree = "<group>"; };
 		B7CE2627D5B84C9B0558F7E391CACB79 /* Pods-EggRating_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EggRating_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		BE65312CAA3EE8C18448B0AA39F27FE4 /* EggRating.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EggRating.xcconfig; sourceTree = "<group>"; };
-		CCFDDE206DDEDECB2D9D1FAE3286A488 /* EggRatingViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = EggRatingViewController.xib; sourceTree = "<group>"; };
-		D133015A180285B821A3A101F225EE6A /* EggRating-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EggRating-dummy.m"; sourceTree = "<group>"; };
 		D32A41DE13827AC9C3FCC70339652FB0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D76194FDD77C27EC84BC602E417D5385 /* Pods-EggRating_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-EggRating_Tests.modulemap"; sourceTree = "<group>"; };
 		DB4B4429CE72EB530ACC64AA3841D8B7 /* RateView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RateView.xcconfig; sourceTree = "<group>"; };
+		DDDBEAED343F7D57EDD10521A4260759 /* EggRating.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EggRating.framework; path = EggRating.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFB0CBC1C6042FB244565BBE7791802F /* Pods_EggRating_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EggRating_Tests.framework; path = "Pods-EggRating_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E55BA5586C05F44B833139D70FBBFCBD /* RateView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RateView.framework; path = RateView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E849A7D2EFBA8110F9458FF0847CF4F4 /* Pods-EggRating_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EggRating_Example-umbrella.h"; sourceTree = "<group>"; };
+		EBF5DF291F7687BF7452CD9774F688B3 /* EggRating.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = EggRating.modulemap; sourceTree = "<group>"; };
+		ECEAE51FFF127E2CBE81F2425DCECFD7 /* EggRating.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EggRating.xcconfig; sourceTree = "<group>"; };
 		EFF5739CE49481E3DFB4573255ECEFF1 /* RateView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = RateView.modulemap; sourceTree = "<group>"; };
 		F1A6BC57F6B409661A8763A5D7579C2C /* RateView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RateView-dummy.m"; sourceTree = "<group>"; };
-		FB4D03A68A8EA818A111E8BEB8EB0340 /* EggRating.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EggRating.framework; path = EggRating.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		66B78F53E1319F4ABC46D547F14BB283 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E29BE92E2B6D4BF5D5733B7D46A9270F /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		70855EF63CA578C26CD1CB7F999BF168 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B9AF9B42C7278C63834197FE6C3F0D69 /* Foundation.framework in Frameworks */,
-				495C5322DF471AE29F901AEFECB215C4 /* RateView.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7E6BA5BDCBF9F982DC578947262D0D46 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		91BB20D1EF1C3223618CB4B4879180A3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -150,17 +115,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E1DB288C0227FA5C49DA9C2C24009341 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E21546BC065975181CCF9B97B811F09 /* Foundation.framework in Frameworks */,
+				C950A36C389771E3F9060BB29A8213EE /* RateView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE257EC4CEFE21D0A009CF7AC54A8AAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DFE70BC155AAFB88ADB6ABF80C99CCD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		035F33ED5D75ED63551DD0A1C31948E9 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				4C47990825509A06C4D82C6707CB260F /* EggRating */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		0F2CE3787B0D84F3575F18F69A641E72 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -170,14 +144,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1327AEF3866B6B1E4A22DCC24E0A5774 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				328A8DED5FE22418CD8DA1D97200B0B8 /* EggRating */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
 		13FAE21C9B923B697C29942C134F5E20 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,49 +151,6 @@
 				659C43842241DD717BF9160FB3659EE2 /* Pods-EggRating_Tests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		150930013CF3E23F968043599DE19FE4 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Classes;
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		328A8DED5FE22418CD8DA1D97200B0B8 /* EggRating */ = {
-			isa = PBXGroup;
-			children = (
-				150930013CF3E23F968043599DE19FE4 /* Classes */,
-			);
-			name = EggRating;
-			path = EggRating;
-			sourceTree = "<group>";
-		};
-		4C47990825509A06C4D82C6707CB260F /* EggRating */ = {
-			isa = PBXGroup;
-			children = (
-				F9E5169D79D98F39675BE4BB3AEEBA86 /* EggRating */,
-				1327AEF3866B6B1E4A22DCC24E0A5774 /* Resources */,
-				60B2F1D342F2C55B3FCA8F48CD3FF32F /* Support Files */,
-			);
-			name = EggRating;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		60B2F1D342F2C55B3FCA8F48CD3FF32F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				202151B2385D134A58318D040DF23594 /* EggRating.modulemap */,
-				BE65312CAA3EE8C18448B0AA39F27FE4 /* EggRating.xcconfig */,
-				D133015A180285B821A3A101F225EE6A /* EggRating-dummy.m */,
-				7776961A859C2D56F481254DBF52221F /* EggRating-prefix.pch */,
-				AF2B321F14B3BDACE217D1E87A2E7617 /* EggRating-umbrella.h */,
-				56D9D53CDFBC57D8382ECEF3498F43F9 /* Info.plist */,
-				2B12AF37D688CDA07F02AD0E0449531D /* ResourceBundle-EggRating-Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/EggRating";
 			sourceTree = "<group>";
 		};
 		659C43842241DD717BF9160FB3659EE2 /* Pods-EggRating_Tests */ = {
@@ -260,12 +183,43 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				035F33ED5D75ED63551DD0A1C31948E9 /* Development Pods */,
+				9A1490109B73AB663DD5134301583DAB /* Development Pods */,
 				0F2CE3787B0D84F3575F18F69A641E72 /* Frameworks */,
 				A19D2761D43DF30EDEF903550B39FA1B /* Pods */,
-				DB42632B6F2805F024B2C2C6438A3A60 /* Products */,
+				B0CEEC2F2D5AC2FBE81D420D4DC1D382 /* Products */,
 				13FAE21C9B923B697C29942C134F5E20 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		8D3CA81EDCAEFCD46B1EAF42F3479AEA /* EggRating */ = {
+			isa = PBXGroup;
+			children = (
+				A8B1328B8625E27A16BFE744C6C00B6F /* Classes */,
+			);
+			name = EggRating;
+			path = EggRating;
+			sourceTree = "<group>";
+		};
+		94074898F3B90EBBD065E8531C6AD9C0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EBF5DF291F7687BF7452CD9774F688B3 /* EggRating.modulemap */,
+				ECEAE51FFF127E2CBE81F2425DCECFD7 /* EggRating.xcconfig */,
+				A93226ECB7BEF208B7501DB59319C52A /* EggRating-dummy.m */,
+				72CF60CD0A01994DA9C7B046FA0C9CA4 /* EggRating-prefix.pch */,
+				5D8C930184DEBA385A9A483A54501EF1 /* EggRating-umbrella.h */,
+				7C576619499477FA0956193D9FC82EE8 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/EggRating";
+			sourceTree = "<group>";
+		};
+		9A1490109B73AB663DD5134301583DAB /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C7AE76FB140898EF1B8640C92118EAA0 /* EggRating */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		A19D2761D43DF30EDEF903550B39FA1B /* Pods */ = {
@@ -274,6 +228,28 @@
 				DD54B04A01AAEBDCDCA969A5C6AD8950 /* RateView */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		A8B1328B8625E27A16BFE744C6C00B6F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				22456F90375F43CBC6AD25E39F3E9AB8 /* EggRating.swift */,
+				40F7620D5351F87EFAF5C762B5204595 /* EggRatingViewController.swift */,
+				A70CD5735B61964974001224C4AF420B /* EggRatingViewController.xib */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		B0CEEC2F2D5AC2FBE81D420D4DC1D382 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DDDBEAED343F7D57EDD10521A4260759 /* EggRating.framework */,
+				85DC23734619C26862EEA0A93F27D134 /* Pods_EggRating_Example.framework */,
+				DFB0CBC1C6042FB244565BBE7791802F /* Pods_EggRating_Tests.framework */,
+				E55BA5586C05F44B833139D70FBBFCBD /* RateView.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		B7A941E3520401FB7F01E8312D6919C8 /* Support Files */ = {
@@ -290,16 +266,14 @@
 			path = "../Target Support Files/RateView";
 			sourceTree = "<group>";
 		};
-		DB42632B6F2805F024B2C2C6438A3A60 /* Products */ = {
+		C7AE76FB140898EF1B8640C92118EAA0 /* EggRating */ = {
 			isa = PBXGroup;
 			children = (
-				033BA4F0E111F5540663A07107E1C70C /* EggRating.bundle */,
-				FB4D03A68A8EA818A111E8BEB8EB0340 /* EggRating.framework */,
-				9D625987D883EE715B545F95782B7B25 /* Pods_EggRating_Example.framework */,
-				A4F4E821A8BFCA1108E33F887CC62E4F /* Pods_EggRating_Tests.framework */,
-				0CD630161E6B95E17A69E2F285BB37DC /* RateView.framework */,
+				8D3CA81EDCAEFCD46B1EAF42F3479AEA /* EggRating */,
+				94074898F3B90EBBD065E8531C6AD9C0 /* Support Files */,
 			);
-			name = Products;
+			name = EggRating;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		DD54B04A01AAEBDCDCA969A5C6AD8950 /* RateView */ = {
@@ -331,37 +305,9 @@
 			path = "Target Support Files/Pods-EggRating_Example";
 			sourceTree = "<group>";
 		};
-		F9E5169D79D98F39675BE4BB3AEEBA86 /* EggRating */ = {
-			isa = PBXGroup;
-			children = (
-				FB49D762B0E692B8F5C3D9713063E1AC /* Classes */,
-			);
-			name = EggRating;
-			path = EggRating;
-			sourceTree = "<group>";
-		};
-		FB49D762B0E692B8F5C3D9713063E1AC /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				56576E9DF563D45968086EAFF4327A90 /* EggRating.swift */,
-				7BA2AD277AD8DD90879DFE3C6CD65C40 /* EggRatingViewController.swift */,
-				CCFDDE206DDEDECB2D9D1FAE3286A488 /* EggRatingViewController.xib */,
-			);
-			name = Classes;
-			path = Classes;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		02CB682A4C0AFCFBD290169B4DE71A7F /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6DA353EFC919CBD837D0E2E995578AB4 /* EggRating-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		03A7544AE9FEEF3B89E26EED604D4EBB /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -378,25 +324,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7A8D8BE0C74C8CB9C7BBE27530FFEAAF /* Headers */ = {
+		6503DE1C243AC3698EC3909365310521 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				061C87BF54D572867DA4E871AECF224A /* RateView-umbrella.h in Headers */,
-				B934E8047ECA2BE4C7A0358EBDB7BA37 /* RateView.h in Headers */,
+				28C75B5E23464B41E94012757FC01B9D /* EggRating-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E901EC4CCBD1346989DB38B8A60FB631 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CF8FA41E2B67FFE7495A77C18AC551D /* RateView-umbrella.h in Headers */,
+				33DD7FB5F18541193A9181798B994B53 /* RateView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0B0E838A3D32246A9D5986B2BB524567 /* RateView */ = {
+		13EA3C0DCC793BFEF22281E01CB4F23B /* RateView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9696A1DC1FA5F455BC0222790E2C6CC7 /* Build configuration list for PBXNativeTarget "RateView" */;
+			buildConfigurationList = 373FB7293EB94D2D4785DE1FAAACD667 /* Build configuration list for PBXNativeTarget "RateView" */;
 			buildPhases = (
-				38E407A543BE89A3954BEBC7949CF58D /* Sources */,
-				66B78F53E1319F4ABC46D547F14BB283 /* Frameworks */,
-				7A8D8BE0C74C8CB9C7BBE27530FFEAAF /* Headers */,
+				CBEA8192C0B0D70A7C39262EAC197F66 /* Sources */,
+				FE257EC4CEFE21D0A009CF7AC54A8AAB /* Frameworks */,
+				E901EC4CCBD1346989DB38B8A60FB631 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -404,7 +358,7 @@
 			);
 			name = RateView;
 			productName = RateView;
-			productReference = 0CD630161E6B95E17A69E2F285BB37DC /* RateView.framework */;
+			productReference = E55BA5586C05F44B833139D70FBBFCBD /* RateView.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		331CC807975D110981F4C2E5E4F09CBF /* Pods-EggRating_Example */ = {
@@ -423,45 +377,26 @@
 			);
 			name = "Pods-EggRating_Example";
 			productName = "Pods-EggRating_Example";
-			productReference = 9D625987D883EE715B545F95782B7B25 /* Pods_EggRating_Example.framework */;
+			productReference = 85DC23734619C26862EEA0A93F27D134 /* Pods_EggRating_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		8CC88BFE9D8D11B7452FA26B47A7DFEE /* EggRating */ = {
+		8316EBB250B480CB1C8BFD7DB63EEA3C /* EggRating */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C5FA76F634BC2B9F995B8F6701C7503E /* Build configuration list for PBXNativeTarget "EggRating" */;
+			buildConfigurationList = CD3E425541D5F7D83964F34B095878E0 /* Build configuration list for PBXNativeTarget "EggRating" */;
 			buildPhases = (
-				78CCBC4481D2EB668F941E74A68164DC /* Sources */,
-				70855EF63CA578C26CD1CB7F999BF168 /* Frameworks */,
-				86284A7197DD67309050E0BA5A178C79 /* Resources */,
-				02CB682A4C0AFCFBD290169B4DE71A7F /* Headers */,
+				413291EDA58AFA1B6564454529795C42 /* Sources */,
+				E1DB288C0227FA5C49DA9C2C24009341 /* Frameworks */,
+				6503DE1C243AC3698EC3909365310521 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				34661C6CEC4909E42C9370498BE06254 /* PBXTargetDependency */,
-				89751728B60890B67D09F2512A92B4AB /* PBXTargetDependency */,
+				74FE066EB6D87B51E95E2E6910B3C72F /* PBXTargetDependency */,
 			);
 			name = EggRating;
 			productName = EggRating;
-			productReference = FB4D03A68A8EA818A111E8BEB8EB0340 /* EggRating.framework */;
+			productReference = DDDBEAED343F7D57EDD10521A4260759 /* EggRating.framework */;
 			productType = "com.apple.product-type.framework";
-		};
-		98375419D9CAC203D2E7EF7210F48BA5 /* EggRating-EggRating */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BC2997187FF81F8723AA3BD7B38C91F3 /* Build configuration list for PBXNativeTarget "EggRating-EggRating" */;
-			buildPhases = (
-				A621601459CA5FD6449B97F2888BA974 /* Sources */,
-				7E6BA5BDCBF9F982DC578947262D0D46 /* Frameworks */,
-				0B87563C526E9F0DBA6C9BC65527AE69 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "EggRating-EggRating";
-			productName = "EggRating-EggRating";
-			productReference = 033BA4F0E111F5540663A07107E1C70C /* EggRating.bundle */;
-			productType = "com.apple.product-type.bundle";
 		};
 		E58BA9AE7FA19CC579D5A7973418E2B6 /* Pods-EggRating_Tests */ = {
 			isa = PBXNativeTarget;
@@ -477,7 +412,7 @@
 			);
 			name = "Pods-EggRating_Tests";
 			productName = "Pods-EggRating_Tests";
-			productReference = A4F4E821A8BFCA1108E33F887CC62E4F /* Pods_EggRating_Tests.framework */;
+			productReference = DFB0CBC1C6042FB244565BBE7791802F /* Pods_EggRating_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -497,45 +432,27 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = DB42632B6F2805F024B2C2C6438A3A60 /* Products */;
+			productRefGroup = B0CEEC2F2D5AC2FBE81D420D4DC1D382 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8CC88BFE9D8D11B7452FA26B47A7DFEE /* EggRating */,
-				98375419D9CAC203D2E7EF7210F48BA5 /* EggRating-EggRating */,
+				8316EBB250B480CB1C8BFD7DB63EEA3C /* EggRating */,
 				331CC807975D110981F4C2E5E4F09CBF /* Pods-EggRating_Example */,
 				E58BA9AE7FA19CC579D5A7973418E2B6 /* Pods-EggRating_Tests */,
-				0B0E838A3D32246A9D5986B2BB524567 /* RateView */,
+				13EA3C0DCC793BFEF22281E01CB4F23B /* RateView */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		0B87563C526E9F0DBA6C9BC65527AE69 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0AF98DEA306016A11CBB6F4499D29712 /* EggRatingViewController.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		86284A7197DD67309050E0BA5A178C79 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2BE07DD31FB661A76543CF05E560B65A /* EggRating.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		38E407A543BE89A3954BEBC7949CF58D /* Sources */ = {
+		413291EDA58AFA1B6564454529795C42 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7F676CB60074CCEA5453311E401ACA1 /* RateView-dummy.m in Sources */,
-				2A69A95B30A66C950B4E351822406EE9 /* RateView.m in Sources */,
+				64099D4544A415E6B615FA44E0CE7FFB /* EggRating-dummy.m in Sources */,
+				D6C7E93BBCB0EFEAFBEC35C1C99871FF /* EggRating.swift in Sources */,
+				C42D557B1CA8C01FEFAC89AEB8FA5A0B /* EggRatingViewController.swift in Sources */,
+				0B84723FEF48AADF86247A1C06FF9E79 /* EggRatingViewController.xib in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -547,17 +464,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		78CCBC4481D2EB668F941E74A68164DC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A43191099C0CD97FC0E3A85880E67171 /* EggRating-dummy.m in Sources */,
-				245F0E40CAA2B791C74F79B8827AB6EE /* EggRating.swift in Sources */,
-				837D851A6382C8659A0839A1F59B14C5 /* EggRatingViewController.swift in Sources */,
-				D2B55D46BF6F319BF2109AD476EAC543 /* EggRatingViewController.xib in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		A2AF8B7B13B6609059437677BA2B2F11 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -566,63 +472,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A621601459CA5FD6449B97F2888BA974 /* Sources */ = {
+		CBEA8192C0B0D70A7C39262EAC197F66 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6DEE4CF8D2033122EB0428104169E1C /* RateView-dummy.m in Sources */,
+				06A4628A491D78D58F6C04CDE1EBFFCB /* RateView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		34661C6CEC4909E42C9370498BE06254 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "EggRating-EggRating";
-			target = 98375419D9CAC203D2E7EF7210F48BA5 /* EggRating-EggRating */;
-			targetProxy = 35D390749F7E0ED2A8D4AF3DC1E68887 /* PBXContainerItemProxy */;
-		};
 		3AF24F0149CE5F6BB08ECC01FCD4A201 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = EggRating;
-			target = 8CC88BFE9D8D11B7452FA26B47A7DFEE /* EggRating */;
+			target = 8316EBB250B480CB1C8BFD7DB63EEA3C /* EggRating */;
 			targetProxy = 710B841199E18C06DA0AD49336A30609 /* PBXContainerItemProxy */;
 		};
-		89751728B60890B67D09F2512A92B4AB /* PBXTargetDependency */ = {
+		74FE066EB6D87B51E95E2E6910B3C72F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RateView;
-			target = 0B0E838A3D32246A9D5986B2BB524567 /* RateView */;
-			targetProxy = FE99AEA290CEDBE496B7E6FD43EA84EF /* PBXContainerItemProxy */;
+			target = 13EA3C0DCC793BFEF22281E01CB4F23B /* RateView */;
+			targetProxy = 56487AF7D8A4724656DB801125300B9A /* PBXContainerItemProxy */;
 		};
 		89B3668E942C0592ADEC3CB83A6E75AF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = RateView;
-			target = 0B0E838A3D32246A9D5986B2BB524567 /* RateView */;
+			target = 13EA3C0DCC793BFEF22281E01CB4F23B /* RateView */;
 			targetProxy = A2C053B3F516589A582625B53F2DB137 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		19933E56C8B1CBE12AB2472A657359FA /* Release */ = {
+		13B130336A9487D3D6C36328380D8279 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE65312CAA3EE8C18448B0AA39F27FE4 /* EggRating.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/EggRating";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/EggRating/ResourceBundle-EggRating-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = EggRating;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		2E90E2A17D1F9B3E39AF28E4398B6425 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE65312CAA3EE8C18448B0AA39F27FE4 /* EggRating.xcconfig */;
+			baseConfigurationReference = ECEAE51FFF127E2CBE81F2425DCECFD7 /* EggRating.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -652,6 +537,70 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		4084B198E839E989762F9DFC9B3F02D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECEAE51FFF127E2CBE81F2425DCECFD7 /* EggRating.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/EggRating/EggRating-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EggRating/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/EggRating/EggRating.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = EggRating;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		40B1CC08742D824D84F9C95C58096366 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB4B4429CE72EB530ACC64AA3841D8B7 /* RateView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RateView/RateView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RateView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RateView/RateView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = RateView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		599090D5A7C3B745E292ECDB5BBAADEE /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -687,38 +636,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		5BF54210C1AE1CABCEB29B58CEEA24CD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DB4B4429CE72EB530ACC64AA3841D8B7 /* RateView.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/RateView/RateView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RateView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/RateView/RateView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = RateView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		5C3BA8713BC251285309FCF0A80F6187 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -790,23 +707,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		8B9A4E0475F6C7763C2EC8313634B48D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE65312CAA3EE8C18448B0AA39F27FE4 /* EggRating.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/EggRating";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/EggRating/ResourceBundle-EggRating-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				PRODUCT_NAME = EggRating;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
 		};
 		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -892,6 +792,38 @@
 			};
 			name = Debug;
 		};
+		BB1AD42233502B7A3264EA1766875659 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB4B4429CE72EB530ACC64AA3841D8B7 /* RateView.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RateView/RateView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RateView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RateView/RateView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = RateView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		BEC88054DB91F868D9CDD9A8039C4EEB /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 925D7452FD5DD919F22FF5F3A1B80444 /* Pods-EggRating_Example.release.xcconfig */;
@@ -927,70 +859,6 @@
 			};
 			name = Release;
 		};
-		E6B5D4FF556FFF8C628D30A337EFC277 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DB4B4429CE72EB530ACC64AA3841D8B7 /* RateView.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/RateView/RateView-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RateView/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/RateView/RateView.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = RateView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F0C03353466534C164AA8FD0C54259EC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE65312CAA3EE8C18448B0AA39F27FE4 /* EggRating.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/EggRating/EggRating-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/EggRating/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/EggRating/EggRating.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = EggRating;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -999,6 +867,15 @@
 			buildConfigurations = (
 				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
 				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		373FB7293EB94D2D4785DE1FAAACD667 /* Build configuration list for PBXNativeTarget "RateView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB1AD42233502B7A3264EA1766875659 /* Debug */,
+				40B1CC08742D824D84F9C95C58096366 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1012,15 +889,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9696A1DC1FA5F455BC0222790E2C6CC7 /* Build configuration list for PBXNativeTarget "RateView" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E6B5D4FF556FFF8C628D30A337EFC277 /* Debug */,
-				5BF54210C1AE1CABCEB29B58CEEA24CD /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		B9A1CB643D2D1C148F9C3A362CB34544 /* Build configuration list for PBXNativeTarget "Pods-EggRating_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1030,20 +898,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BC2997187FF81F8723AA3BD7B38C91F3 /* Build configuration list for PBXNativeTarget "EggRating-EggRating" */ = {
+		CD3E425541D5F7D83964F34B095878E0 /* Build configuration list for PBXNativeTarget "EggRating" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8B9A4E0475F6C7763C2EC8313634B48D /* Debug */,
-				19933E56C8B1CBE12AB2472A657359FA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C5FA76F634BC2B9F995B8F6701C7503E /* Build configuration list for PBXNativeTarget "EggRating" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2E90E2A17D1F9B3E39AF28E4398B6425 /* Debug */,
-				F0C03353466534C164AA8FD0C54259EC /* Release */,
+				13B130336A9487D3D6C36328380D8279 /* Debug */,
+				4084B198E839E989762F9DFC9B3F02D4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
