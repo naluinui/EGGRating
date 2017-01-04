@@ -5,6 +5,8 @@
 [![License](https://img.shields.io/cocoapods/l/EggRating.svg?style=flat)](http://cocoapods.org/pods/EggRating)
 [![Platform](https://img.shields.io/cocoapods/p/EggRating.svg?style=flat)](http://cocoapods.org/pods/EggRating)
 
+An iOS app review tool for getting only good reviews in the App Store!'
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.

@@ -8,17 +8,11 @@
 
 Pod::Spec.new do |s|
   s.name             = 'EggRating'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of EggRating.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
+  s.version          = '1.0.0'
+  s.summary          = 'An iOS app review tool for getting only good reviews in the App Store!'
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Increase your iOS app reviews with EggRating. EggRating will prompt users to rate the app after they have used it a certain number of times or after a set time period. If the user rates more than a certain number, EggRating will take them right to the app store where they can leave their good review.
                        DESC
 
   s.homepage         = 'https://github.com/naluinui/EggRating'
@@ -36,7 +30,5 @@ TODO: Add long description of the pod here.
     'EggRating' => ['EggRating/Assets/**/*.xib']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'RateView'
 end
