@@ -83,28 +83,26 @@ class EggRatingTableViewController: UITableViewController {
         if indexPath.section == 1 {
             switch indexPath.row {
             case 1:
+                pushToEditVC(identifier: .minimumScore)
+            case 2:
                 if !EggRating.debugMode {
                     pushToEditVC(identifier: .daysUntilPrompt)
                 }
-            case 2:
+            case 3:
                 if !EggRating.debugMode {
                     pushToEditVC(identifier: .daysRemindPeriod)
                 }
-            case 3:
+            case 4:
                 if EggRating.debugMode {
                     pushToEditVC(identifier: .minutesUntilPrompt)
                 }
-            case 4:
+            case 5:
                 if EggRating.debugMode {
                     pushToEditVC(identifier: .minitesRemindPeriod)
                 }
-            case 5:
-                if EggRating.debugMode {
-                    pushToEditVC(identifier: .appVersion)
-                }
             case 6:
                 if EggRating.debugMode {
-                    pushToEditVC(identifier: .minimumScore)
+                    pushToEditVC(identifier: .appVersion)
                 }
             default:
                 break
