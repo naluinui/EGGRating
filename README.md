@@ -20,9 +20,9 @@ it, simply add the following line to your Podfile:
 pod 'EggRating'
 ```
 
-## Author
+## Credits
 
-Somjintana K., nuisomjin@gmail.com
+The star in the App Icon of an example project is made by [Maxim Basinski](http://www.flaticon.com/authors/maxim-basinski) from www.flaticon.com
 
 ## License
 
