@@ -16,7 +16,7 @@ Increase your iOS app reviews with EggRating. EggRating will prompt users to rat
                        DESC
 
   s.homepage         = 'https://github.com/naluinui/EggRating'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.screenshots     = 'https://cloud.githubusercontent.com/assets/9149523/21668934/8649721e-d339-11e6-8d48-49d4cbb88fe0.png'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Somjintana K.' => 'nuisomjin@gmail.com' }
   s.source           = { :git => 'https://github.com/naluinui/EggRating.git', :tag => s.version.to_s }
