@@ -5,12 +5,18 @@
 [![License](https://img.shields.io/cocoapods/l/EggRating.svg?style=flat)](http://cocoapods.org/pods/EggRating)
 [![Platform](https://img.shields.io/cocoapods/p/EggRating.svg?style=flat)](http://cocoapods.org/pods/EggRating)
 
-Increase your iOS app reviews with EggRating. EggRating will prompt users to rate the app after they have used it a certain number of times or after a set time period. If the user rates more than a certain number, EggRating will take them right to the app store where they can leave their good review. 😉👍
+![Screenshots](https://cloud.githubusercontent.com/assets/9149523/21668615/1ceabc18-d336-11e6-87e2-66612f67ba5f.png)
+![Screenshots](https://cloud.githubusercontent.com/assets/9149523/21668631/4fae51aa-d336-11e6-9027-1ef335d6a70b.png)
+
+Increase your iOS app reviews with EggRating. EggRating will prompt users to rate the app after they have used it a certain number of times or after a set time period. If the user rates more than a certain number, EggRating will take them right to the app store where they can leave their good review 😉👍
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+
+
 
 ## Installation
 
