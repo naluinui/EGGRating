@@ -25,13 +25,7 @@ pod 'EggRating'
 
 ## Usage
 
-1., Add the following import to the top of the AppDelegate file:
-
-```swift
-import EggRating
-```
-
-2., Initialize `EggRating` in `application:didFinishLaunchingWithOptions:`
+1. Import `EggRating` in `AppDelegate` file and in `application:didFinishLaunchingWithOptions:` initialize `EggRating` with your itunesId and the other properties you want
 
 ```swift
 EggRating.itunesId = "123456789"
