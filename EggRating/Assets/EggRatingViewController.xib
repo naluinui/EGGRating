@@ -112,7 +112,7 @@
                         </constraints>
                     </view>
                 </subviews>
-                <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                <color key="backgroundColor" white="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="calibratedWhite"/>
                 <constraints>
                     <constraint firstItem="VRS-MU-Me6" firstAttribute="centerX" secondItem="jC7-ck-e03" secondAttribute="centerX" id="1jh-xG-Mum"/>
                     <constraint firstItem="VRS-MU-Me6" firstAttribute="centerY" secondItem="jC7-ck-e03" secondAttribute="centerY" id="cAt-aE-VTN"/>
