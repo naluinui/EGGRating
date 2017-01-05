@@ -76,6 +76,56 @@ extension ViewController: EggRatingDelegate {
     }
 }
 ```
+## Customisation
+
+`EggRating` also provides a property set for a customization usage:
+
+- `itunesId` : The iTunes ID of the application (required).
+
+- `delegate` : Register in order to listen to rating actions.
+
+- `minRatingToAppStore` : Minimum score to bring user to review on the App Store, default is 4.0.
+
+- `daysUntilPrompt` : A certain number of times to display `EggRating` after first used date, default is 10 days.
+
+- `remindPeriod` : A certain number of times to display `EggRating` again, default is 10 days.
+
+- `starFillColor` : The color of selected stars, default is yellow.
+
+- `starNormalColor` : The color of normal stars, default is clear.
+
+- `starBorderColor` : The color of star border, default is yellow.
+
+- `titleLabelText` : The title of `EggRating` dialog.
+
+- `descriptionLabelText` : The description of `EggRating` dialog.
+
+- `dismissButtonTitleText` : The dismiss button title of `EggRating` dialog.
+
+- `rateButtonTitleText` : The rate button title of `EggRating` dialog.
+
+- `thankyouTitleLabelText` : The thank you title of `EggRating` dialog.
+
+- `thankyouDescriptionLabelText` : The thank you description of `EggRating` dialog.
+
+- `thankyouDismissButtonTitleText` : The thank you dismiss button of `EggRating` dialog.
+
+- `appStoreTitleLabelText` : The rate on app store title of EggRatingView.
+
+- `appStoreDescriptionLabelText` : The rate on app store description of EggRatingView.
+
+- `appStoreDismissButtonTitleText` : The rate on app store dismiss button title of EggRatingView.
+
+- `appStoreRateButtonTitleText` : The rate on app store rate button title of EggRatingView.
+
+- `debugMode` : The debug mode, default is false.
+
+- `minuteUntilPrompt` : A certain number of times to display `EggRating` after first used date in minute. This can be set only when debug mode is on.
+    
+- `minuteRemindPeriod` : A certain number of times to display `EggRating` again in minute. This can be set only when debug mode is on.
+
+- `appVersion` : The application version. This can be set only when debug mode is on.
+
 
 ## Credits
 The rating stars are from [RateView](https://github.com/taruntyagi697/RateView). <br>
