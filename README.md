@@ -104,19 +104,19 @@ extension ViewController: EggRatingDelegate {
 
 - `rateButtonTitleText` : The rate button title of `EggRating` dialog.
 
-- `thankyouTitleLabelText` : The thank you title of `EggRating` dialog.
+- `thankyouTitleLabelText` : The thank you title.
 
-- `thankyouDescriptionLabelText` : The thank you description of `EggRating` dialog.
+- `thankyouDescriptionLabelText` : The thank you description.
 
-- `thankyouDismissButtonTitleText` : The thank you dismiss button of `EggRating` dialog.
+- `thankyouDismissButtonTitleText` : The thank you dismiss button.
 
-- `appStoreTitleLabelText` : The rate on app store title of EggRatingView.
+- `appStoreTitleLabelText` : The rate on app store title.
 
-- `appStoreDescriptionLabelText` : The rate on app store description of EggRatingView.
+- `appStoreDescriptionLabelText` : The rate on app store description.
 
-- `appStoreDismissButtonTitleText` : The rate on app store dismiss button title of EggRatingView.
+- `appStoreDismissButtonTitleText` : The rate on app store dismiss button title.
 
-- `appStoreRateButtonTitleText` : The rate on app store rate button title of EggRatingView.
+- `appStoreRateButtonTitleText` : The rate on app store rate button title.
 
 - `debugMode` : The debug mode, default is false.
 
