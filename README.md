@@ -8,11 +8,7 @@ Let's increase your iOS app reviews with `EggRating`.
 
 `EggRating` is an iOS app review tool written in Swift. `EggRating` will prompt users to rate the app after they have used it a certain number of times or after a set time period. If the user rates more than a certain number, `EggRating` will take them right to the app store where they can leave their good review 😉👍 
 
-![Screenshots](https://cloud.githubusercontent.com/assets/9149523/21668837/3d1978b0-d338-11e6-9b4e-91e900f38002.png)
-
-## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+![Screenshots](https://cloud.githubusercontent.com/assets/9149523/21668934/8649721e-d339-11e6-8d48-49d4cbb88fe0.png)
 
 ## Requirements
 
@@ -25,6 +21,21 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'EggRating'
+```
+
+## Usage
+
+1., Add the following import to the top of the AppDelegate file:
+
+```swift
+import EggRating
+```
+
+2., Initialize `EggRating` in `application:didFinishLaunchingWithOptions:`
+
+```swift
+EggRating.itunesId = "123456789"
+EggRating.minRatingToAppStore = 3.5
 ```
 
 ## Credits
