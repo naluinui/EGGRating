@@ -8,7 +8,7 @@ Let's increase your iOS app reviews with `EggRating`.
 
 `EggRating` is an iOS app review tool written in Swift. `EggRating` will prompt users to rate the app after they have used it a certain number of times or after a set time period. If the user rates more than a certain number, `EggRating` will take them right to the app store where they can leave their good review 😉👍 
 
-![Screenshots](https://cloud.githubusercontent.com/assets/9149523/21668934/8649721e-d339-11e6-8d48-49d4cbb88fe0.png)
+![Screenshots](https://cloud.githubusercontent.com/assets/9149523/21676989/bf9cb586-d36a-11e6-81b7-e6f499f2d0d5.png)
 
 ## Requirements
 
