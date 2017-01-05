@@ -126,6 +126,9 @@ extension ViewController: EggRatingDelegate {
 
 - `appVersion` : The application version. This can be set only when debug mode is on.
 
+## Example
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Credits
 - The rating stars are from [RateView](https://github.com/taruntyagi697/RateView).
