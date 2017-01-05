@@ -23,7 +23,7 @@
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VRS-MU-Me6">
-                        <rect key="frame" x="20" y="131" width="280" height="218"/>
+                        <rect key="frame" x="20" y="130" width="280" height="220"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you love our app, please take a moment to rate it." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F98-wi-9DB">
                                 <rect key="frame" x="16" y="122" width="248" height="36"/>
@@ -38,21 +38,22 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AxH-y4-34j">
-                                <rect key="frame" x="140" y="180" width="140" height="38"/>
+                                <rect key="frame" x="140" y="180" width="140" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="lpg-lE-DnV"/>
+                                    <constraint firstAttribute="height" constant="40" id="lpg-lE-DnV"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <state key="normal" title="Rate"/>
                                 <connections>
                                     <action selector="rateButtonTouched:" destination="5mP-Vn-wKe" eventType="touchUpInside" id="X91-cH-3Pz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIb-DU-Auj">
-                                <rect key="frame" x="0.0" y="180" width="140" height="38"/>
+                                <rect key="frame" x="0.0" y="180" width="140" height="40"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="38" id="LtE-DE-ZbR"/>
+                                    <constraint firstAttribute="height" constant="40" id="LtE-DE-ZbR"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Not Now"/>
                                 <connections>
                                     <action selector="cancelButtonTouched:" destination="5mP-Vn-wKe" eventType="touchUpInside" id="PCz-pT-Xjo"/>
@@ -68,17 +69,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hwx-ki-jOQ">
-                                <rect key="frame" x="0.0" y="178" width="280" height="1"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="0.0" y="178" width="280" height="0.5"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.5" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="7M5-Zp-vLD"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1PV-C0-h8C">
-                                <rect key="frame" x="139.5" y="178" width="1" height="40"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="139.5" y="178" width="0.5" height="42"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="0.5" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="1" id="SkZ-k1-6yN"/>
+                                    <constraint firstAttribute="width" constant="0.5" id="SkZ-k1-6yN"/>
                                 </constraints>
                             </view>
                         </subviews>
