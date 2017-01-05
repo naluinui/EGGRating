@@ -60,11 +60,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		033BA4F0E111F5540663A07107E1C70C /* EggRating.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = EggRating.bundle; path = EggRating.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		0CD630161E6B95E17A69E2F285BB37DC /* RateView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RateView.framework; path = RateView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		033BA4F0E111F5540663A07107E1C70C /* EggRating.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EggRating.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CD630161E6B95E17A69E2F285BB37DC /* RateView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RateView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1611ADDC6FADAD3FCE0CEF143AC839CB /* Pods-EggRating_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EggRating_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		1E50EC641CF8697D74220AA27E59D815 /* Pods-EggRating_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EggRating_Example-dummy.m"; sourceTree = "<group>"; };
-		202151B2385D134A58318D040DF23594 /* EggRating.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = EggRating.modulemap; sourceTree = "<group>"; };
+		202151B2385D134A58318D040DF23594 /* EggRating.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = EggRating.modulemap; sourceTree = "<group>"; };
 		2B12AF37D688CDA07F02AD0E0449531D /* ResourceBundle-EggRating-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-EggRating-Info.plist"; sourceTree = "<group>"; };
 		34DE35DFD34E7BBC518BFEA73C643F3A /* EggRatingViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = EggRatingViewController.xib; sourceTree = "<group>"; };
 		35B82EAFE247B31D82238B2941444972 /* Pods-EggRating_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EggRating_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -83,15 +83,15 @@
 		925D7452FD5DD919F22FF5F3A1B80444 /* Pods-EggRating_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EggRating_Example.release.xcconfig"; sourceTree = "<group>"; };
 		928DD5D884142387B33CD4BF7AF0A813 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		92B9DE7B2147E734173A255380FF8FF9 /* RateView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RateView.h; path = RateView/RateView.h; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9B0EC8348B122AFC5B7090799F15BC4B /* Pods-EggRating_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EggRating_Tests-resources.sh"; sourceTree = "<group>"; };
 		9BA04744DF36CC527F76C8A95F3986E7 /* RateView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RateView.m; path = RateView/RateView.m; sourceTree = "<group>"; };
-		9D625987D883EE715B545F95782B7B25 /* Pods_EggRating_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EggRating_Example.framework; path = "Pods-EggRating_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D625987D883EE715B545F95782B7B25 /* Pods_EggRating_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EggRating_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A35A8DA1E932984A664BB6D25A2BA137 /* Pods-EggRating_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EggRating_Example-frameworks.sh"; sourceTree = "<group>"; };
-		A4F4E821A8BFCA1108E33F887CC62E4F /* Pods_EggRating_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EggRating_Tests.framework; path = "Pods-EggRating_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4F4E821A8BFCA1108E33F887CC62E4F /* Pods_EggRating_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EggRating_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A739675DAC39B062A2AA9EF7940AA554 /* Pods-EggRating_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EggRating_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		ABB14CC81FC7E65BCD2AB9DB1A4F7E71 /* EggRatingViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EggRatingViewController.swift; sourceTree = "<group>"; };
-		AE259194009CD2D35ED451DBEA893271 /* Pods-EggRating_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-EggRating_Example.modulemap"; sourceTree = "<group>"; };
+		AE259194009CD2D35ED451DBEA893271 /* Pods-EggRating_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-EggRating_Example.modulemap"; sourceTree = "<group>"; };
 		AEBE97B1DDB8D9461D5BAF094E6D1A47 /* Pods-EggRating_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EggRating_Tests-umbrella.h"; sourceTree = "<group>"; };
 		AF2B321F14B3BDACE217D1E87A2E7617 /* EggRating-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EggRating-umbrella.h"; sourceTree = "<group>"; };
 		B0357DE874E3E931257BCF4C892E99AA /* Pods-EggRating_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EggRating_Tests-frameworks.sh"; sourceTree = "<group>"; };
@@ -100,12 +100,12 @@
 		BE65312CAA3EE8C18448B0AA39F27FE4 /* EggRating.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EggRating.xcconfig; sourceTree = "<group>"; };
 		D133015A180285B821A3A101F225EE6A /* EggRating-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EggRating-dummy.m"; sourceTree = "<group>"; };
 		D32A41DE13827AC9C3FCC70339652FB0 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D76194FDD77C27EC84BC602E417D5385 /* Pods-EggRating_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-EggRating_Tests.modulemap"; sourceTree = "<group>"; };
+		D76194FDD77C27EC84BC602E417D5385 /* Pods-EggRating_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-EggRating_Tests.modulemap"; sourceTree = "<group>"; };
 		DB4B4429CE72EB530ACC64AA3841D8B7 /* RateView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RateView.xcconfig; sourceTree = "<group>"; };
 		E849A7D2EFBA8110F9458FF0847CF4F4 /* Pods-EggRating_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EggRating_Example-umbrella.h"; sourceTree = "<group>"; };
-		EFF5739CE49481E3DFB4573255ECEFF1 /* RateView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = RateView.modulemap; sourceTree = "<group>"; };
+		EFF5739CE49481E3DFB4573255ECEFF1 /* RateView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RateView.modulemap; sourceTree = "<group>"; };
 		F1A6BC57F6B409661A8763A5D7579C2C /* RateView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RateView-dummy.m"; sourceTree = "<group>"; };
-		FB4D03A68A8EA818A111E8BEB8EB0340 /* EggRating.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EggRating.framework; path = EggRating.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB4D03A68A8EA818A111E8BEB8EB0340 /* EggRating.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EggRating.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,7 +192,6 @@
 				371CC52CC260C94B8C9B135396BE2AC1 /* EggRating.swift */,
 				ABB14CC81FC7E65BCD2AB9DB1A4F7E71 /* EggRatingViewController.swift */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -201,7 +200,6 @@
 			children = (
 				186C1004C4587532938E1DC94EACC506 /* Classes */,
 			);
-			name = EggRating;
 			path = EggRating;
 			sourceTree = "<group>";
 		};
@@ -262,7 +260,6 @@
 			children = (
 				34DE35DFD34E7BBC518BFEA73C643F3A /* EggRatingViewController.xib */,
 			);
-			name = Assets;
 			path = Assets;
 			sourceTree = "<group>";
 		};
@@ -305,7 +302,6 @@
 			children = (
 				79D5F8494FACFEE5F5869DF03F977340 /* Assets */,
 			);
-			name = EggRating;
 			path = EggRating;
 			sourceTree = "<group>";
 		};
@@ -328,7 +324,6 @@
 				9BA04744DF36CC527F76C8A95F3986E7 /* RateView.m */,
 				B7A941E3520401FB7F01E8312D6919C8 /* Support Files */,
 			);
-			name = RateView;
 			path = RateView;
 			sourceTree = "<group>";
 		};
