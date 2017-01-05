@@ -25,11 +25,56 @@ pod 'EggRating'
 
 ## Usage
 
-1. Import `EggRating` in `AppDelegate` file and in `application:didFinishLaunchingWithOptions:` initialize `EggRating` with your itunesId and the other properties you want
+1., Import `EggRating` in `AppDelegate` file and in `application:didFinishLaunchingWithOptions:` initialize `EggRating` with your itunesId and other properties you want to customize
 
 ```swift
 EggRating.itunesId = "123456789"
 EggRating.minRatingToAppStore = 3.5
+```
+
+2., Import `EggRating` in view controller file:
+
+```swift
+import EggRating
+```
+
+3., Use the following to display the `EggRating` automatically (with the conditions):
+
+```swift
+EggRating.promptRateUsIfNeeded(viewController: self)
+```
+
+4., To show an `EggRating` immediately:
+
+```swift
+EggRating.promptRateUs(viewController: self)
+```
+
+5., To access `EggRating` protocol, implement `EggRatingDelegate`:
+
+```swift
+EggRating.delegate = self
+```
+
+```swift
+extension ViewController: EggRatingDelegate {
+    
+    func didRate(rating: Double) {
+        print("didRate: \(rating)")
+    }
+    
+    func didRateOnAppStore() {
+        print("didRateOnAppStore")
+    }
+    
+    func didIgnoreToRate() {
+        print("didIgnoreToRate")
+    }
+    
+    func didIgnoreToRateOnAppStore() {
+        print("didIgnoreToRateOnAppStore")
+    }
+}
 ```
 
 ## Credits
