@@ -128,8 +128,8 @@ extension ViewController: EggRatingDelegate {
 
 
 ## Credits
-The rating stars are from [RateView](https://github.com/taruntyagi697/RateView). <br>
-The star in the App Icon of an example project is made by [Maxim Basinski](http://www.flaticon.com/authors/maxim-basinski) from www.flaticon.com
+- The rating stars are from [RateView](https://github.com/taruntyagi697/RateView).
+- The star in the App Icon of an example project is made by [Maxim Basinski](http://www.flaticon.com/authors/maxim-basinski) from www.flaticon.com
 
 ## License
 
