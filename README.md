@@ -13,6 +13,7 @@ Let's increase your iOS app reviews with `EggRating`.
 ## Requirements
 
 - iOS 8.0+
+- Swift 2.3+
 
 ## Installation
 
