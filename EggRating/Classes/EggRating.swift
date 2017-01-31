@@ -17,10 +17,24 @@ public class EggRating: NSObject {
     public static var minRatingToAppStore = 4.0
     
     /// The condition to show EggRatingView after first time user start using the application, default is 10 days. This will be used only when debug mode is off.
-    public static var daysUntilPrompt = 10
+    public static var daysUntilPrompt = 10 {
+        didSet {
+            if daysUntilPrompt == 0 {
+                daysUntilPrompt = 10
+                print("[EggRating] ‼️ Days until prompt shouldn't be 0.")
+            }
+        }
+    }
     
     /// The condition to remind the user to rate the application again, default is 10 days. This will be used only when debug mode is off.
-    public static var remindPeriod = 10
+    public static var remindPeriod = 10 {
+        didSet {
+            if remindPeriod == 0 {
+                remindPeriod = 10
+                print("[EggRating] ‼️ Remind period shouldn't be 0.")
+            }
+        }
+    }
     
     /// The protocol of the actions in EggRatingView. Assign this value in viewDidLoad of UIViewController which you want to show EggRatingView before calling promptRateUsIfNeeded(viewController: UIViewController) or promptRateUs(viewController: UIViewController) functions.
     public static var delegate: EggRatingDelegate?
