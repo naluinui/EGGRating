@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'EggRating'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'An iOS app review tool for getting only good reviews in the App Store!'
 
   s.description      = <<-DESC

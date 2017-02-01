@@ -161,6 +161,7 @@ class EggRatingViewController: UIViewController {
 extension EggRatingViewController: RateViewDelegate {
     
     func rateView(_ rateView: RateView!, didUpdateRating rating: Float) {
-        self.rating = Double(rating)
+        let celiRating = String(format: "%.2f", rating)
+        self.rating = Double(celiRating) ?? Double(rating)
     }
 }
