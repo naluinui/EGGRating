@@ -16,6 +16,15 @@ public protocol EggRatingDelegate {
     func didIgnoreToRate()
     func didRateOnAppStore()
     func didIgnoreToRateOnAppStore()
+    
+    /// If this method returns false, the disadvantage alert will not be shown when the user rates the app poorly. This provides an opportunity for clients to provide custom behavior in such a case.
+    func shouldPresentDisadvantageAlert() -> Bool
+}
+
+extension EggRatingDelegate {
+    func shouldPresentDisadvantageAlert() -> Bool {
+        return true
+    }
 }
 
 class EggRatingViewController: UIViewController {
@@ -119,7 +128,7 @@ class EggRatingViewController: UIViewController {
             // only save last rated version if user rates more than mininum score
             UserDefaults.standard.set(EggRating.appVersion, forKey: EggRatingUserDefaultsKey.lastVersionRatedKey.rawValue)
             
-        } else {
+        } else if let delegate = delegate, delegate.shouldPresentDisadvantageAlert() {
             showDisadvantageAlertController()
         }
         

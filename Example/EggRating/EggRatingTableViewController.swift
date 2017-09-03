@@ -123,6 +123,9 @@ class EggRatingTableViewController: UITableViewController {
 }
 
 extension EggRatingTableViewController: EggRatingDelegate {
+    func shouldPresentDisadvantageAlert() -> Bool {
+        return true
+    }
     
     func didRate(rating: Double) {
         print("didRate: \(rating)")
