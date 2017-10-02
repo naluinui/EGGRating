@@ -89,7 +89,7 @@ class EggRatingViewController: UIViewController {
     
     func sendUserToAppStore() {
         
-        guard let url = URL(string: "itms-apps://itunes.apple.com/WebObjects/MZStore.woa/wa/viewContentsUserReviews?id=\(EggRating.itunesId)&onlyLatestVersion=true&pageNumber=0&sortOrdering=1&type=Purple+Software") else {
+        guard let url = URL(string: "itms-apps://itunes.apple.com/us/app/itunes-u/id\(EggRating.itunesId)?ls=1&mt=8&action=write-review") else {
             return
         }
         
