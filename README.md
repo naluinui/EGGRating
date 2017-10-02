@@ -13,7 +13,7 @@ Let's increase your iOS app reviews with `EggRating`.
 ## Requirements
 
 - iOS 8.0+
-- Swift 2.3+
+- Swift 3.0+
 
 ## Installation
 
@@ -22,12 +22,6 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'EggRating'
-```
-
-For Swift 2.3:
-
-```ruby
-pod 'EggRating', :git => 'https://github.com/naluinui/EggRating.git', :branch => 'swift-2.3'
 ```
 
 ## Usage
@@ -48,13 +42,13 @@ import EggRating
 3., Use the following to display the `EggRating` automatically (with the conditions):
 
 ```swift
-EggRating.promptRateUsIfNeeded(viewController: self)
+EggRating.promptRateUsIfNeeded(in: self)
 ```
 
 4., To show an `EggRating` immediately:
 
 ```swift
-EggRating.promptRateUs(viewController: self)
+EggRating.promptRateUs(in: self)
 ```
 
 5., To access `EggRating` protocol, implement `EggRatingDelegate`:
