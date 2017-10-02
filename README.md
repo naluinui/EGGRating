@@ -24,12 +24,6 @@ it, simply add the following line to your Podfile:
 pod 'EggRating'
 ```
 
-For Swift 2.3:
-
-```ruby
-pod 'EggRating', :git => 'https://github.com/naluinui/EggRating.git', :branch => 'swift-2.3'
-```
-
 ## Usage
 
 1., Import `EggRating` in `AppDelegate` file and in `application:didFinishLaunchingWithOptions:` initialize `EggRating` with your itunesId and other properties you want to customize
