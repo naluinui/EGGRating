@@ -1,7 +1,6 @@
 # EggRating
 Let's increase your iOS app reviews with `EggRating`.
 
-[![CI Status](http://img.shields.io/travis/Somjintana K./EggRating.svg?style=flat)](https://travis-ci.org/Somjintana K./EggRating)
 [![Version](https://img.shields.io/cocoapods/v/EggRating.svg?style=flat)](http://cocoapods.org/pods/EggRating)
 [![License](https://img.shields.io/cocoapods/l/EggRating.svg?style=flat)](http://cocoapods.org/pods/EggRating)
 [![Platform](https://img.shields.io/cocoapods/p/EggRating.svg?style=flat)](http://cocoapods.org/pods/EggRating)
