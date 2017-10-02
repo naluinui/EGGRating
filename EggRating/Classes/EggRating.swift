@@ -16,6 +16,9 @@ public class EggRating: NSObject {
     /// The minimum score to bring user to rate on the App Store.
     public static var minRatingToAppStore = 4.0
     
+    /// The condition to show alert dialog after user rated poor score.
+    public static var shouldShowThankYouAlertController = true
+    
     /// The condition to show EggRatingView after first time user start using the application, default is 10 days. This will be used only when debug mode is off.
     public static var daysUntilPrompt = 10 {
         didSet {

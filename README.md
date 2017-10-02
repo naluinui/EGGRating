@@ -133,6 +133,8 @@ extension ViewController: EggRatingDelegate {
 
 - `appVersion` : The application version. This can be set only when debug mode is on.
 
+- `shouldShowThankYouAlertController` : The condition to show thank you alert dialog after user rated poor score.
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.

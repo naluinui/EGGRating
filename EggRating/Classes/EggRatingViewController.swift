@@ -120,7 +120,7 @@ class EggRatingViewController: UIViewController {
             UserDefaults.standard.set(EggRating.appVersion, forKey: EggRatingUserDefaultsKey.lastVersionRatedKey.rawValue)
             
         } else {
-            showDisadvantageAlertController()
+            showThankyouAlertController()
         }
         
         delegate?.didRate(rating: rating)
@@ -128,7 +128,9 @@ class EggRatingViewController: UIViewController {
     
     // MARK: Alert
     
-    func showDisadvantageAlertController() {
+    func showThankyouAlertController() {
+        
+        if !EggRating.shouldShowThankYouAlertController { return }
         
         let disadvantageAlertController = UIAlertController(title: EggRating.thankyouTitleLabelText, message: EggRating.thankyouDescriptionLabelText, preferredStyle: .alert)
         
