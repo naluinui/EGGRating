@@ -42,13 +42,13 @@ import EggRating
 3., Use the following to display the `EggRating` automatically (with the conditions):
 
 ```swift
-EggRating.promptRateUsIfNeeded(viewController: self)
+EggRating.promptRateUsIfNeeded(in: self)
 ```
 
 4., To show an `EggRating` immediately:
 
 ```swift
-EggRating.promptRateUs(viewController: self)
+EggRating.promptRateUs(in: self)
 ```
 
 5., To access `EggRating` protocol, implement `EggRatingDelegate`:
