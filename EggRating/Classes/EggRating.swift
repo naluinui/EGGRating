@@ -168,9 +168,9 @@ public class EggRating: NSObject {
      - parameter viewController: The view controller to show RateUsView
      */
 
-    public static func promptRateUsIfNeeded(viewController: UIViewController) {
+    public static func promptRateUsIfNeeded(in viewController: UIViewController) {
         if shouldPromptForRating {
-            self.promptRateUs(viewController: viewController)
+            self.promptRateUs(in: viewController)
             lastRemind = Date()
         }
     }
@@ -180,7 +180,7 @@ public class EggRating: NSObject {
      - parameter viewController: The view controller to show RateUsView
      */
     
-    public static func promptRateUs(viewController: UIViewController) {
+    public static func promptRateUs(in viewController: UIViewController) {
         
         if itunesId == "" {
             print("[EggRating] ‼️ itunesId is required.")

@@ -26,7 +26,7 @@ class EggRatingTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         EggRating.delegate = self
-        EggRating.promptRateUsIfNeeded(viewController: self)
+        EggRating.promptRateUsIfNeeded(in: self)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -63,11 +63,11 @@ class EggRatingTableViewController: UITableViewController {
     // MARK: - Action
     
     @IBAction func rateNowButtonTouched(_ sender: UIButton) {
-        EggRating.promptRateUs(viewController: self)
+        EggRating.promptRateUs(in: self)
     }
     
     @IBAction func rateWithConditionButtonTouched(_ sender: UIButton) {
-        EggRating.promptRateUsIfNeeded(viewController: self)
+        EggRating.promptRateUsIfNeeded(in: self)
     }
     
     @IBAction func debugModeValueChanged(_ sender: UISwitch) {
