@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'EggRating'
   s.version          = '0.1.4'
-  s.summary          = 'An iOS app review tool for getting only good reviews in the App Store!'
+  s.summary          = 'An iOS app review tool to get only good reviews in the App Store!'
 
   s.description      = <<-DESC
 Increase your iOS app reviews with EggRating. EggRating will prompt users to rate the app after they have used it a certain number of times or after a set time period. If the user rates more than a certain number, EggRating will take them right to the app store where they can leave their good review.
