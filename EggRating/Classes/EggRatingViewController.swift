@@ -11,7 +11,7 @@ import RateView
 
 /// The protocol of the actions in EggRatingView.
 
-public protocol EggRatingDelegate {
+@objc public protocol EggRatingDelegate {
     func didRate(rating rate: Double)
     func didIgnoreToRate()
     func didRateOnAppStore()

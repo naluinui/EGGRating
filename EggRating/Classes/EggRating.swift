@@ -11,16 +11,16 @@ import UIKit
 public class EggRating: NSObject {
     
     /// The iTunes ID of the application. This field is required to bring the user to the App Store.
-    public static var itunesId = ""
+    @objc public static var itunesId = ""
     
     /// The minimum score to bring user to rate on the App Store.
-    public static var minRatingToAppStore = 4.0
+    @objc public static var minRatingToAppStore = 4.0
     
     /// The condition to show alert dialog after user rated poor score.
-    public static var shouldShowThankYouAlertController = true
+    @objc public static var shouldShowThankYouAlertController = true
     
     /// The condition to show EggRatingView after first time user start using the application, default is 10 days. This will be used only when debug mode is off.
-    public static var daysUntilPrompt = 10 {
+    @objc public static var daysUntilPrompt = 10 {
         didSet {
             if daysUntilPrompt == 0 {
                 daysUntilPrompt = 10
@@ -30,7 +30,7 @@ public class EggRating: NSObject {
     }
     
     /// The condition to remind the user to rate the application again, default is 10 days. This will be used only when debug mode is off.
-    public static var remindPeriod = 10 {
+    @objc public static var remindPeriod = 10 {
         didSet {
             if remindPeriod == 0 {
                 remindPeriod = 10
@@ -40,15 +40,15 @@ public class EggRating: NSObject {
     }
     
     /// The protocol of the actions in EggRatingView. Assign this value in viewDidLoad of UIViewController which you want to show EggRatingView before calling promptRateUsIfNeeded(viewController: UIViewController) or promptRateUs(viewController: UIViewController) functions.
-    public static var delegate: EggRatingDelegate?
+    @objc public static var delegate: EggRatingDelegate?
     
     /// The current application version.
-    public static let currentAppVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "0.0.0"
+    @objc public static let currentAppVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String ?? "0.0.0"
     
     // MARK: - Debugging Properties
     
     /// The debug mode, default is false.
-    public static var debugMode = false {
+    @objc public static var debugMode = false {
         didSet {
             if debugMode {
                 print("[EggRating] ‼️ Debug mode is now on. Don't forget to set it back to be 'false' before uploading to the App Store.")
@@ -58,7 +58,7 @@ public class EggRating: NSObject {
     
     /// The condition to show EggRatingView after first time user start using the application in minute. You can set and get the value you want only when debug mode is on. If debug mode is off, this will return the daysUntilPrompt in minutes.
 
-    public static var minuteUntilPrompt: Int {
+    @objc public static var minuteUntilPrompt: Int {
         set(minute) {
             _minuteUntilPrompt = minute
         } get {
@@ -70,7 +70,7 @@ public class EggRating: NSObject {
     
     /// The condition to remind the user to rate the application again. You can set and get the value you want only when debug mode is on. If debug mode is off, this will return the remindPeriod in minutes.
     
-    public static var minuteRemindPeriod: Int {
+    @objc public static var minuteRemindPeriod: Int {
         set(minute) {
             _minuteRemindPeriod = minute
         } get {
@@ -82,7 +82,7 @@ public class EggRating: NSObject {
     
     /// The application version property, You can set and get the value you want only when debug mode is on. If debug mode is off, this will return the current version of the application which is in the bundle directory.
     
-    public static var appVersion: String {
+    @objc public static var appVersion: String {
         set(version) {
             _appVersion = version
         } get {
@@ -95,53 +95,53 @@ public class EggRating: NSObject {
     // MARK: - Star Properties
     
     /// The color of selected stars, default is yellow.
-    public static var starFillColor = UIColor(red: 255/255, green: 181/255, blue: 17/255, alpha: 1)
+    @objc public static var starFillColor = UIColor(red: 255/255, green: 181/255, blue: 17/255, alpha: 1)
     
     /// The color of normal stars, default is clear.
-    public static var starNormalColor = UIColor.clear
+    @objc public static var starNormalColor = UIColor.clear
     
     /// The color of star border, default is yellow.
-    public static var starBorderColor = UIColor(red: 255/255, green: 181/255, blue: 17/255, alpha: 1)
+    @objc public static var starBorderColor = UIColor(red: 255/255, green: 181/255, blue: 17/255, alpha: 1)
     
     // MARK: - Button Properties
     
     /// The title of EggRatingView.
-    public static var titleLabelText = "Rate This App"
+    @objc public static var titleLabelText = "Rate This App"
     
     /// The description of EggRatingView.
-    public static var descriptionLabelText = "If you love our app, please take a moment to rate it."
+    @objc public static var descriptionLabelText = "If you love our app, please take a moment to rate it."
     
     /// The dismiss button title of EggRatingView.
-    public static var dismissButtonTitleText = "Not Now"
+    @objc public static var dismissButtonTitleText = "Not Now"
     
     /// The rate button title of EggRatingView.
-    public static var rateButtonTitleText = "Rate"
+    @objc public static var rateButtonTitleText = "Rate"
     
     /// The thank you title of EggRatingView.
-    public static var thankyouTitleLabelText = "Thank you!"
+    @objc public static var thankyouTitleLabelText = "Thank you!"
     
     /// The thank you description of EggRatingView.
-    public static var thankyouDescriptionLabelText = "Thank you for taking the time to provide us with your valuable feedback."
+    @objc public static var thankyouDescriptionLabelText = "Thank you for taking the time to provide us with your valuable feedback."
     
     /// The thank you dismiss button of EggRatingView.
-    public static var thankyouDismissButtonTitleText = "OK"
+    @objc public static var thankyouDismissButtonTitleText = "OK"
     
     /// The rate on app store title of EggRatingView.
-    public static var appStoreTitleLabelText = "Write a review on the App Store"
+    @objc public static var appStoreTitleLabelText = "Write a review on the App Store"
     
     /// The rate on app store description of EggRatingView.
-    public static var appStoreDescriptionLabelText = "Would you mind taking a moment to rate it on the App Store? It won't take more than a minute. Thanks for your support!"
+    @objc public static var appStoreDescriptionLabelText = "Would you mind taking a moment to rate it on the App Store? It won't take more than a minute. Thanks for your support!"
    
     /// The rate on app store dismiss button title of EggRatingView.
-    public static var appStoreDismissButtonTitleText = "Cancel"
+    @objc public static var appStoreDismissButtonTitleText = "Cancel"
     
     /// The rate on app store rate button title of EggRatingView.
-    public static var appStoreRateButtonTitleText = "Rate It Now"
+    @objc public static var appStoreRateButtonTitleText = "Rate It Now"
     
     // MARK: - Main Methods
     
     /// The condition to show EggRatingView included: minutesFromFirstUsed, applicationVersion, minutesFromLastRemind.
-    public static var shouldPromptForRating: Bool {
+    @objc public static var shouldPromptForRating: Bool {
         
         let minutesFromFirstUsed = Calendar.current.dateComponents([.minute], from: firstUsed, to: Date()).minute ?? 0
         let minutesFromLastRemind = Calendar.current.dateComponents([.minute], from: lastRemind, to: Date()).minute ?? 0
@@ -171,7 +171,7 @@ public class EggRating: NSObject {
      - parameter viewController: The view controller to show RateUsView
      */
 
-    public static func promptRateUsIfNeeded(in viewController: UIViewController) {
+    @objc public static func promptRateUsIfNeeded(in viewController: UIViewController) {
         if shouldPromptForRating {
             self.promptRateUs(in: viewController)
             lastRemind = Date()
@@ -183,7 +183,7 @@ public class EggRating: NSObject {
      - parameter viewController: The view controller to show RateUsView
      */
     
-    public static func promptRateUs(in viewController: UIViewController) {
+    @objc public static func promptRateUs(in viewController: UIViewController) {
         
         if itunesId == "" {
             print("[EggRating] ‼️ itunesId is required.")
@@ -245,7 +245,7 @@ public class EggRating: NSObject {
     
     /// The day user starts using the application.
     
-    public static private(set) var firstUsed: Date {
+    @objc public static private(set) var firstUsed: Date {
         set (date) {
             userDefaults.set(date, forKey: EggRatingUserDefaultsKey.firstUsedKey.rawValue)
         } get {
@@ -261,7 +261,7 @@ public class EggRating: NSObject {
     
     /// The last day EggRatingView is reminded.
     
-    public static private(set) var lastRemind: Date {
+    @objc public static private(set) var lastRemind: Date {
         set(date) {
             userDefaults.set(date, forKey: EggRatingUserDefaultsKey.lastRemindKey.rawValue)
         } get {
@@ -278,7 +278,7 @@ public class EggRating: NSObject {
     
     /// The latest application version which user has rated.
     
-    public static private(set) var lastVersionRated: String {
+    @objc public static private(set) var lastVersionRated: String {
         set(version) {
             userDefaults.set(version, forKey: EggRatingUserDefaultsKey.lastVersionRatedKey.rawValue)
         } get {
