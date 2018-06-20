@@ -74,6 +74,10 @@ extension ViewController: EggRatingDelegate {
     func didIgnoreToRateOnAppStore() {
         print("didIgnoreToRateOnAppStore")
     }
+    
+    func didDissmissThankYouDialog() {
+        print("didDissmissThankYouDialog")
+    }
 }
 ```
 ## Customisation
