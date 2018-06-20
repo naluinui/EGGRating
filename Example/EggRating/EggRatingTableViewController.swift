@@ -140,4 +140,8 @@ extension EggRatingTableViewController: EggRatingDelegate {
     func didIgnoreToRateOnAppStore() {
         print("didIgnoreToRateOnAppStore")
     }
+    
+    func didDissmissThankYouDialog() {
+        print("didDissmissThankYouDialog")
+    }
 }

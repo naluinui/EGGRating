@@ -16,6 +16,7 @@ import RateView
     func didIgnoreToRate()
     func didRateOnAppStore()
     func didIgnoreToRateOnAppStore()
+    func didDissmissThankYouDialog()
 }
 
 class EggRatingViewController: UIViewController {
@@ -135,6 +136,7 @@ class EggRatingViewController: UIViewController {
         let disadvantageAlertController = UIAlertController(title: EggRating.thankyouTitleLabelText, message: EggRating.thankyouDescriptionLabelText, preferredStyle: .alert)
         
         disadvantageAlertController.addAction(UIAlertAction(title: EggRating.thankyouDismissButtonTitleText, style: .default, handler: { (_) in
+            self.delegate?.didDissmissThankYouDialog()
             self.dismiss(animated: false, completion: nil)
         }))
         
