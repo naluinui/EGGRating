@@ -1,3 +1,5 @@
+**This library is deprecated**. Anyone who wants a tool for ratings and reviews, please use the official one from Apple instead: [https://developer.apple.com/app-store/ratings-and-reviews/](https://developer.apple.com/app-store/ratings-and-reviews/)
+
 # EggRating
 Let's increase your iOS app reviews with `EggRating`.
 
